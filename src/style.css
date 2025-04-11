@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+body.menu-open {
+    overflow: hidden;
+}
+
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-inter{
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1323px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+
+.nav__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav__menu__btn {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+#custom-arrows button.slick-arrow {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #ddd;
+    transition: .3s;
+}
+
+#custom-arrows button.slick-next.slick-arrow {
+    left: 90px;
+}
+
+#custom-arrows button.slick-arrow:hover{
+    box-shadow: 0 0 6px #ddd;
+    color: #000;
+}
+
+#custom-arrows button.slick-arrow:hover i{
+    color: #000;
+    transition: .3s;
+}
+
+
+
+.circle:before {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    border: 1px solid #D9D9D9;
+}
+
+.circle:after {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    border: 1px solid #D9D9D9;
+}
+
+
+.testimonial-area ul, .team-slider ul {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.testimonial-area ul li, .team-slider ul li {
+    display: inline-block;
+}
+
+.testimonial-area ul li button, .team-slider ul li button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background: #ddd;
+    margin: 0 3px;
+    border-radius: 50%;
+}
+
+.testimonial-area ul li.slick-active button, .team-slider ul li.slick-active button {
+    background: #1B99D4;
+}
+@media (width > 768px) {
+    .nav__menu__btn {
+        display: none;
+    }
+
+
+}
+
+
+@media (width < 768px) {
+    
+
+    .btn {
+        display: none;
+    }
+
+    
+
+    header {
+        padding-top: 0;
+    }
+
+    .nav__bar {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .nav__links {
+        list-style: none;
+        position: fixed;
+        top: 86px;
+        right: 0; 
+        height: 100vh;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 2rem 1rem;
+        gap: 2rem;
+        font-size: 1.2rem;
+        transform: translateX(100%);
+        transition: 0.5s ease-in-out;
+        z-index: 9999;
+        opacity: 0;
+        visibility: hidden;
+        background: #1B99D4;
+    }
+
+    .nav__links.open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav__links a {
+        position: relative;
+        padding-bottom: 8px;
+        transition: .3s;
+        color: white;
+    }
+
+    #custom-arrows button.slick-arrow {
+
+        bottom: -80px;;
+    }
+
+}
+
+
