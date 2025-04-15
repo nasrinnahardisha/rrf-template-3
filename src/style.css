@@ -1,192 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-body{
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
-}
-body.menu-open {
-    overflow: hidden;
+h1, h2, h3, h5 {
+	font-family: "Bricolage Grotesque", sans-serif;
 }
 
-.font-poppins{
-    font-family: 'Poppins', sans-serif;
-}
-
-.font-inter{
-    font-family: 'Inter', sans-serif;
+body {
+	font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	color: #45426E;
 }
 
 .container {
-    max-width: 1323px;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+	max-width: 1180px;
+	margin: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.h2 {
+	font-size: 60px;
+	line-height: 1;
+	font-weight: 700;
+	letter-spacing: -1px;
+	color: #17134a;
+}
+
+.h3 {
+	font-size: 50px;
+	line-height: 1;
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	color: #17134a;
+}
+
+.h5 {
+	font-size: 24px;
+	line-height: 26.4px;
+	font-weight: 700;
+	color: #17134a;
+}
+
+.h6 {
+	font-size: 20px;
+	line-height: 1.4;
+	font-weight: 600;
+	color: #17134a;
 }
 
 
-header {
-    position: relative;
-    z-index: 1;
+.hero-btns {
+    text-align: center;
+    background: center / contain no-repeat url('https://cdn.dorik.com/5e373b6c43a72a001f56dbf6/61a1f4035bfd7b0011fb92f9/images/button-bg_wqfy1ggx.svg');
 }
 
-
-.nav__bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-.nav__menu__btn {
-    font-size: 30px;
-    cursor: pointer;
-}
-
-
-
-#custom-arrows button.slick-arrow {
-    position: absolute;
-    left: 0;
-    bottom: -30px;
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    box-shadow: 0 0 2px #ddd;
-    transition: .3s;
-}
-
-#custom-arrows button.slick-next.slick-arrow {
-    left: 90px;
-}
-
-#custom-arrows button.slick-arrow:hover{
-    box-shadow: 0 0 6px #ddd;
-    color: #000;
-}
-
-#custom-arrows button.slick-arrow:hover i{
-    color: #000;
-    transition: .3s;
+.hero-btns a svg {
+    width: 14px;
+    height: 14px;
 }
 
 
 
-.circle:before {
-    position: absolute;
-    left: -10px;
-    top: -10px;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border-radius: 50%;
-    content: "";
-    border: 1px solid #D9D9D9;
+.btn {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	border-radius: 5px;
+	background-color: #3a30ba;
+	padding-inline: 32px;
+	padding-block: 16px;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 500;
+	color: #ffffff;
+	transition-duration: 300ms;
 }
 
-.circle:after {
-    position: absolute;
-    right: -10px;
-    top: -10px;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border-radius: 50%;
-    content: "";
-    border: 1px solid #D9D9D9;
+@media (hover: hover) {
+	.btn:hover {
+		background-color: #12126e;
+	}
 }
 
 
-.testimonial-area ul, .team-slider ul {
-    position: absolute;
-    bottom: -60px;
-    left: 50%;
-    transform: translate(-50%);
+.btns {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	border-radius: 5px;
+	background-color: #3a30ba;
+	padding-inline: 32px;
+	padding-block: 16px;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+	color: #ffffff;
+	transition-duration: 300ms;
 }
 
-.testimonial-area ul li, .team-slider ul li {
-    display: inline-block;
-}
-
-.testimonial-area ul li button, .team-slider ul li button {
-    font-size: 0;
-    width: 12px;
-    height: 12px;
-    background: #ddd;
-    margin: 0 3px;
-    border-radius: 50%;
-}
-
-.testimonial-area ul li.slick-active button, .team-slider ul li.slick-active button {
-    background: #1B99D4;
-}
-@media (width > 768px) {
-    .nav__menu__btn {
-        display: none;
-    }
-
-
+@media (hover: hover) {
+	.btns:hover {
+		background-color: #12126e;
+	}
 }
 
 
-@media (width < 768px) {
-    
 
-    .btn {
-        display: none;
-    }
 
-    
-
-    header {
-        padding-top: 0;
-    }
-
-    .nav__bar {
-        padding-left: 0;
-        padding-right: 0;
-        width: 100%;
-    }
-
-    .nav__links {
-        list-style: none;
-        position: fixed;
-        top: 86px;
-        right: 0; 
-        height: 100vh;
-        width: 250px;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        padding: 2rem 1rem;
-        gap: 2rem;
-        font-size: 1.2rem;
-        transform: translateX(100%);
-        transition: 0.5s ease-in-out;
-        z-index: 9999;
-        opacity: 0;
-        visibility: hidden;
-        background: #1B99D4;
-    }
-
-    .nav__links.open {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav__links a {
-        position: relative;
-        padding-bottom: 8px;
-        transition: .3s;
-        color: white;
-    }
-
-    #custom-arrows button.slick-arrow {
-
-        bottom: -80px;;
-    }
-
+.footer-bg {
+	background-image: url('https://cdn.dorik.com/5e373b6c43a72a001f56dbf6/61a1f4035bfd7b0011fb92f9/images/footer-bg-2_71chjwos-1_iyenu6o2.svg');
+	background-size: contain;
+	background-position: top;
+	background-repeat: no-repeat;
 }
 
+a.footer-bt button {
+	padding: 0.5rem 0.75rem;
+	display: inline;
+	background: #2b2b2b;
+	width: 250px;
+	border-radius: 0.5rem;
+	border: 1px solid #000000;
+	color: #fff;
+	font-weight: 600;
+	position: relative;
+	padding-left: 35px;
+	padding-right: 35px;
+	cursor: pointer;
+}
 
+a.footer-bt button:before {
+	position: absolute;
+	left: 12px;
+	top: 12px;
+	width: 15px;
+	height: 15px;
+	content: "";
+	background: #33b17e;
+	border-radius: 50%;
+}
+
+.footer-bt button:hover {
+	background-color: #424242;
+}
+
+.footer-menu li a {
+	line-height: 26px;
+	color: #A2A1B7;
+}
+
+.footer-menu li a:hover {
+	color: white;
+}
+
+.footer-btns {
+	text-align: center;
+	background: center / contain no-repeat url('https://cdn.dorik.com/5e373b6c43a72a001f56dbf6/61a1f4035bfd7b0011fb92f9/images/button-bg_wqfy1ggx.svg');
+}
+
+.footer-btns a svg {
+	width: 14px;
+	height: 14px;
+}
