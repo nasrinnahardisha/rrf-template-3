@@ -4,173 +4,71 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tailwind css</title>
+    <title>Plumber || Home</title>
     <link href="../src/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
 </head>
 
 <body>
-    <header class="border-b bg-[#FFF9F3] border-[rgba(8,10,71,0.1)]">
+
+
+
+    <header class="min-h-[60px] bg-white shadow-[0px_4px_24px_0px_rgba(0,0,0,0.05)]">
         <div class="container">
-            <div class="ml-[-15px] mr-[-15px] px-[20px]">
-                <div class="flex items-center flex-wrap justify-between pt-5 pb-[5px]">
-                    <div class="shrink-0 mb-[15px] mr-[30px]">
-                        <img src="https://cdn.dorik.com/5e373b6c43a72a001f56dbf6/61a1f4035bfd7b0011fb92f9/images/logo-dark_jta933n2.svg"
-                            alt="Dorik Logo" class="w-[82px]" />
+            <div class="">
+                <div class="flex items-center justify-between  overflow-hidden">
+                    <div class="nav_bar w-full md:w-auto flex justify-between items-center">
+                        <div class="shrink-0 pb-[10px] pt-[8px]">
+                            <img src="../assets/img/logo.png" alt="Logo" />
+                        </div>
+                        <div class="nav__menu__btn " id="menu-btn">
+                            <i class="ri-menu-line"></i>
+                        </div>
                     </div>
-                    <button class="hidden"></button>
-                    <div class="flex items-center basis-auto grow justify-end">
-                        <nav class="flex-1 flex items-center mr-[30px]">
-                            <ul
-                                class="hidden md:flex flex-1 items-center justify-center space-x-[20px] text-[#17134a] font-medium text-[16px] leading-4">
+                    <div class="flex items-center  justify-end gap-[40px]">
+                        <div class="flex items-center">
+                            <ul class="hidden nav__links md:flex  items-center md:justify-center space-x-[37px] text-[#222] font-medium text-sm leading-normal pt-[20px] pb-[19px]"
+                                id="nav-links">
                                 <li>
-                                    <a href="" class="hover:text-[#3A30BA]">✨ Dorik AI</a>
-                                </li>
-                                <li class="relative group">
-                                    <a href="#" class="flex items-center gap-1 hover:text-[#3A30BA]">
-                                        <span>Product</span>
-                                        <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
-                                                viewBox="0 0 17 17" fill="none">
-                                                <path d="M4.15625 6.625L8.15625 10.625L12.1563 6.625" stroke="#17134A"
-                                                    stroke-width="1.33333" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                    </a>
-
-                                    <ul
-                                        class="absolute left-0 top-full mt-2 w-[175px] h-[400px] bg-[#ffffff] shadow-[0_0_0_5px_#ffffff] rounded-[5px] pt-0 pb-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                White-Label CMS
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                Web Site Builder
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                Blogging platform
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                MemberShip Sites
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                SEO
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block whitespace-nowrap px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                AirTable Integration
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                Integration
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                UI Blocks
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                AI Text Generator
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                AI Generator
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <a href="../src/index.html" class="nav-link active">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-[#3A30BA]">Templates</a>
+                                    <a href="../src/about.html" class="nav-link ">About us</a>
                                 </li>
-                                <li><a href="#" class="hover:text-[#3A30BA]">Pricing</a></li>
-                                <li class="relative group">
-                                    <a href="#" class="hover:text-[#3A30BA]">Resources</a>
-                                    <ul
-                                        class="absolute left-0 top-full mt-2 w-[175px] h-[400px] bg-[#ffffff] shadow-[0_0_0_5px_#ffffff] rounded-[5px] pt-0 pb-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                Wall Of Love
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                Blogs
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                Success Stories
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                Made In Dorik
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                Documentation
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                Community
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-3 text-[#17134a] text-[16px] font-medium leading-4 hover:bg-[#FFF9F3] transition-all duration-200">
-                                                Video Tutorials
-                                            </a>
-                                        </li>
-                                    </ul>
+                                <li class="">
+                                    <a href="../src/service.html" class="nav-link ml-[-5px]">Services</a>
                                 </li>
+                                <li>
+                                    <a href="../src/project.html" class="nav-link ">Project</a>
+                                </li>
+                                <li>
+                                    <a href="../src/blog.html" class="nav-link ">Blogs</a>
+                                </li>
+                                <li>
+                                    <a href="#contact" class="nav-link ">Contact</a>
+                                </li>
+
                             </ul>
-                        </nav>
+                        </div>
 
-                        <div class="flex items-center gap-[15px]">
+                        <div class="hidden md:flex pt-[11px] pb-[13px]">
                             <a href="#"
-                                class="text-[#3A30BA] text-[14px] font-medium leading-[21px] px-[16px] py-2">LogIn</a>
-                            <a href="#"
-                                class="text-[#3A30BA] text-[14px] font-medium leading-[21px] px-[18px] py-2 border border-[#3A30BA] rounded">SignUp</a>
+                                class="bg-[#DD3142] rounded-[5px] text-white text-[14px] font-medium leading-[21px] px-[12px] py-[7.5px]">Request
+                                a call Back</a>
+
                         </div>
                     </div>
                 </div>
@@ -179,1227 +77,576 @@
     </header>
 
 
-
-
-    <section class="bg-[#FFF9F3] pb-[190px]">
+    <section id="hero" class="">
         <div class="container">
-            <div class="flex flex-col pt-[75px] justify-center items-center px-[20px]">
-                <h1 class="text-[71px] text-center mx-auto text-[#17134a] leading-[71px] font-bold z-10">
-                    <span>Build Websites with<br />the Power of AI </span>
-                </h1>
-                <div
-                    class="mt-[20px] font-normal leading-[33px] mb-[-8px] px-[10%] pt-[6px] text-[22px] text-center mx-auto text-[#45426E]">
-                    <p>
-                        It takes minutes to finish a website with Dorik, it's simple,
-                        intuitive <br />
-                        and can be easily learned by beginners
-                    </p>
-                </div>
-                <ul class="flex justify-center flex-wrap gap-[30px] items-center my-[25px] ml-[10px]">
-                    <li>
-                        <div class="flex text-left text-[18px] items-center gap-[5px] font-medium">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
-                                    fill="none">
-                                    <path
-                                        d="M10.6875 2.21875C12.8424 2.21875 14.909 3.07477 16.4327 4.59851C17.9565 6.12224 18.8125 8.18887 18.8125 10.3438C18.8125 12.4986 17.9565 14.5653 16.4327 16.089C14.909 17.6127 12.8424 18.4688 10.6875 18.4688C8.53262 18.4688 6.46599 17.6127 4.94226 16.089C3.41852 14.5653 2.5625 12.4986 2.5625 10.3438C2.5625 8.18887 3.41852 6.12224 4.94226 4.59851C6.46599 3.07477 8.53262 2.21875 10.6875 2.21875ZM10.6875 20.3438C13.3397 20.3438 15.8832 19.2902 17.7586 17.4148C19.6339 15.5395 20.6875 12.9959 20.6875 10.3438C20.6875 7.69159 19.6339 5.14805 17.7586 3.27268C15.8832 1.39732 13.3397 0.34375 10.6875 0.34375C8.03534 0.34375 5.4918 1.39732 3.61643 3.27268C1.74107 5.14805 0.6875 7.69159 0.6875 10.3438C0.6875 12.9959 1.74107 15.5395 3.61643 17.4148C5.4918 19.2902 8.03534 20.3438 10.6875 20.3438ZM15.1016 8.50781C15.4688 8.14062 15.4688 7.54688 15.1016 7.18359C14.7344 6.82031 14.1406 6.81641 13.7773 7.18359L9.44141 11.5195L7.60547 9.68359C7.23828 9.31641 6.64453 9.31641 6.28125 9.68359C5.91797 10.0508 5.91406 10.6445 6.28125 11.0078L8.78125 13.5078C9.14844 13.875 9.74219 13.875 10.1055 13.5078L15.1016 8.50781Z"
-                                        fill="#3A30BA" />
-                                </svg></span>
-                            <span>
-                                <p>Landing Pages</p>
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex text-left text-[18px] items-center gap-[5px] font-medium">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
-                                    fill="none">
-                                    <path
-                                        d="M10.6875 2.21875C12.8424 2.21875 14.909 3.07477 16.4327 4.59851C17.9565 6.12224 18.8125 8.18887 18.8125 10.3438C18.8125 12.4986 17.9565 14.5653 16.4327 16.089C14.909 17.6127 12.8424 18.4688 10.6875 18.4688C8.53262 18.4688 6.46599 17.6127 4.94226 16.089C3.41852 14.5653 2.5625 12.4986 2.5625 10.3438C2.5625 8.18887 3.41852 6.12224 4.94226 4.59851C6.46599 3.07477 8.53262 2.21875 10.6875 2.21875ZM10.6875 20.3438C13.3397 20.3438 15.8832 19.2902 17.7586 17.4148C19.6339 15.5395 20.6875 12.9959 20.6875 10.3438C20.6875 7.69159 19.6339 5.14805 17.7586 3.27268C15.8832 1.39732 13.3397 0.34375 10.6875 0.34375C8.03534 0.34375 5.4918 1.39732 3.61643 3.27268C1.74107 5.14805 0.6875 7.69159 0.6875 10.3438C0.6875 12.9959 1.74107 15.5395 3.61643 17.4148C5.4918 19.2902 8.03534 20.3438 10.6875 20.3438ZM15.1016 8.50781C15.4688 8.14062 15.4688 7.54688 15.1016 7.18359C14.7344 6.82031 14.1406 6.81641 13.7773 7.18359L9.44141 11.5195L7.60547 9.68359C7.23828 9.31641 6.64453 9.31641 6.28125 9.68359C5.91797 10.0508 5.91406 10.6445 6.28125 11.0078L8.78125 13.5078C9.14844 13.875 9.74219 13.875 10.1055 13.5078L15.1016 8.50781Z"
-                                        fill="#3A30BA" />
-                                </svg></span>
-                            <span>
-                                <p>Ai Generator</p>
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex text-left text-[18px] items-center gap-[5px] font-medium">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
-                                    fill="none">
-                                    <path
-                                        d="M10.6875 2.21875C12.8424 2.21875 14.909 3.07477 16.4327 4.59851C17.9565 6.12224 18.8125 8.18887 18.8125 10.3438C18.8125 12.4986 17.9565 14.5653 16.4327 16.089C14.909 17.6127 12.8424 18.4688 10.6875 18.4688C8.53262 18.4688 6.46599 17.6127 4.94226 16.089C3.41852 14.5653 2.5625 12.4986 2.5625 10.3438C2.5625 8.18887 3.41852 6.12224 4.94226 4.59851C6.46599 3.07477 8.53262 2.21875 10.6875 2.21875ZM10.6875 20.3438C13.3397 20.3438 15.8832 19.2902 17.7586 17.4148C19.6339 15.5395 20.6875 12.9959 20.6875 10.3438C20.6875 7.69159 19.6339 5.14805 17.7586 3.27268C15.8832 1.39732 13.3397 0.34375 10.6875 0.34375C8.03534 0.34375 5.4918 1.39732 3.61643 3.27268C1.74107 5.14805 0.6875 7.69159 0.6875 10.3438C0.6875 12.9959 1.74107 15.5395 3.61643 17.4148C5.4918 19.2902 8.03534 20.3438 10.6875 20.3438ZM15.1016 8.50781C15.4688 8.14062 15.4688 7.54688 15.1016 7.18359C14.7344 6.82031 14.1406 6.81641 13.7773 7.18359L9.44141 11.5195L7.60547 9.68359C7.23828 9.31641 6.64453 9.31641 6.28125 9.68359C5.91797 10.0508 5.91406 10.6445 6.28125 11.0078L8.78125 13.5078C9.14844 13.875 9.74219 13.875 10.1055 13.5078L15.1016 8.50781Z"
-                                        fill="#3A30BA" />
-                                </svg></span>
-                            <span>
-                                <p>Free Stock Images</p>
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex text-left text-[18px] items-center gap-[5px] font-medium">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
-                                    fill="none">
-                                    <path
-                                        d="M10.6875 2.21875C12.8424 2.21875 14.909 3.07477 16.4327 4.59851C17.9565 6.12224 18.8125 8.18887 18.8125 10.3438C18.8125 12.4986 17.9565 14.5653 16.4327 16.089C14.909 17.6127 12.8424 18.4688 10.6875 18.4688C8.53262 18.4688 6.46599 17.6127 4.94226 16.089C3.41852 14.5653 2.5625 12.4986 2.5625 10.3438C2.5625 8.18887 3.41852 6.12224 4.94226 4.59851C6.46599 3.07477 8.53262 2.21875 10.6875 2.21875ZM10.6875 20.3438C13.3397 20.3438 15.8832 19.2902 17.7586 17.4148C19.6339 15.5395 20.6875 12.9959 20.6875 10.3438C20.6875 7.69159 19.6339 5.14805 17.7586 3.27268C15.8832 1.39732 13.3397 0.34375 10.6875 0.34375C8.03534 0.34375 5.4918 1.39732 3.61643 3.27268C1.74107 5.14805 0.6875 7.69159 0.6875 10.3438C0.6875 12.9959 1.74107 15.5395 3.61643 17.4148C5.4918 19.2902 8.03534 20.3438 10.6875 20.3438ZM15.1016 8.50781C15.4688 8.14062 15.4688 7.54688 15.1016 7.18359C14.7344 6.82031 14.1406 6.81641 13.7773 7.18359L9.44141 11.5195L7.60547 9.68359C7.23828 9.31641 6.64453 9.31641 6.28125 9.68359C5.91797 10.0508 5.91406 10.6445 6.28125 11.0078L8.78125 13.5078C9.14844 13.875 9.74219 13.875 10.1055 13.5078L15.1016 8.50781Z"
-                                        fill="#3A30BA" />
-                                </svg></span>
-                            <span>
-                                <p>Blogs</p>
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex text-left text-[18px] items-center gap-[5px] font-medium">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
-                                    fill="none">
-                                    <path
-                                        d="M10.6875 2.21875C12.8424 2.21875 14.909 3.07477 16.4327 4.59851C17.9565 6.12224 18.8125 8.18887 18.8125 10.3438C18.8125 12.4986 17.9565 14.5653 16.4327 16.089C14.909 17.6127 12.8424 18.4688 10.6875 18.4688C8.53262 18.4688 6.46599 17.6127 4.94226 16.089C3.41852 14.5653 2.5625 12.4986 2.5625 10.3438C2.5625 8.18887 3.41852 6.12224 4.94226 4.59851C6.46599 3.07477 8.53262 2.21875 10.6875 2.21875ZM10.6875 20.3438C13.3397 20.3438 15.8832 19.2902 17.7586 17.4148C19.6339 15.5395 20.6875 12.9959 20.6875 10.3438C20.6875 7.69159 19.6339 5.14805 17.7586 3.27268C15.8832 1.39732 13.3397 0.34375 10.6875 0.34375C8.03534 0.34375 5.4918 1.39732 3.61643 3.27268C1.74107 5.14805 0.6875 7.69159 0.6875 10.3438C0.6875 12.9959 1.74107 15.5395 3.61643 17.4148C5.4918 19.2902 8.03534 20.3438 10.6875 20.3438ZM15.1016 8.50781C15.4688 8.14062 15.4688 7.54688 15.1016 7.18359C14.7344 6.82031 14.1406 6.81641 13.7773 7.18359L9.44141 11.5195L7.60547 9.68359C7.23828 9.31641 6.64453 9.31641 6.28125 9.68359C5.91797 10.0508 5.91406 10.6445 6.28125 11.0078L8.78125 13.5078C9.14844 13.875 9.74219 13.875 10.1055 13.5078L15.1016 8.50781Z"
-                                        fill="#3A30BA" />
-                                </svg></span>
-                            <span>
-                                <p>Web Analytics</p>
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex text-left text-[18px] items-center gap-[5px] font-medium">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
-                                    fill="none">
-                                    <path
-                                        d="M10.6875 2.21875C12.8424 2.21875 14.909 3.07477 16.4327 4.59851C17.9565 6.12224 18.8125 8.18887 18.8125 10.3438C18.8125 12.4986 17.9565 14.5653 16.4327 16.089C14.909 17.6127 12.8424 18.4688 10.6875 18.4688C8.53262 18.4688 6.46599 17.6127 4.94226 16.089C3.41852 14.5653 2.5625 12.4986 2.5625 10.3438C2.5625 8.18887 3.41852 6.12224 4.94226 4.59851C6.46599 3.07477 8.53262 2.21875 10.6875 2.21875ZM10.6875 20.3438C13.3397 20.3438 15.8832 19.2902 17.7586 17.4148C19.6339 15.5395 20.6875 12.9959 20.6875 10.3438C20.6875 7.69159 19.6339 5.14805 17.7586 3.27268C15.8832 1.39732 13.3397 0.34375 10.6875 0.34375C8.03534 0.34375 5.4918 1.39732 3.61643 3.27268C1.74107 5.14805 0.6875 7.69159 0.6875 10.3438C0.6875 12.9959 1.74107 15.5395 3.61643 17.4148C5.4918 19.2902 8.03534 20.3438 10.6875 20.3438ZM15.1016 8.50781C15.4688 8.14062 15.4688 7.54688 15.1016 7.18359C14.7344 6.82031 14.1406 6.81641 13.7773 7.18359L9.44141 11.5195L7.60547 9.68359C7.23828 9.31641 6.64453 9.31641 6.28125 9.68359C5.91797 10.0508 5.91406 10.6445 6.28125 11.0078L8.78125 13.5078C9.14844 13.875 9.74219 13.875 10.1055 13.5078L15.1016 8.50781Z"
-                                        fill="#3A30BA" />
-                                </svg></span>
-                            <span>
-                                <p>White-Label CMS</p>
-                            </span>
-                        </div>
-                    </li>
-                </ul>
-                <div class="w-full px-5">
-                    <div class="hero-btns py-[5px] mb-5 flex justify-center">
-                        <a class="btn" href="#">
-                            Try it Free
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right"
-                                class="svg-inline--fa fa-angle-right fa-fw icon " role="img"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-testid="icon-test">
-                                <path fill="currentColor"
-                                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="">
+                <div class="flex items-center gap-[128px] pt-[48px]">
 
-                <div class="px-5">
-                    <div class="flex justify-center items-center flex-wrap gap-x-[40px] gap-y-[20px] mt-[30px]">
-                        <div class="py-15px text-[#45426E] text-[16px] font-normal leading-[24px]">
-                            Featured on:
-                        </div>
-                        <div class="block">
-                            <img src="../assets/img/featured-1.png" alt="" />
-                        </div>
-                        <div class="block">
-                            <img src="../assets/img/featured-2.png" alt="" />
-                        </div>
-                        <div class="block">
-                            <img src="../assets/img/featured-3.png" alt="" />
-                        </div>
-                        <div class="block">
-                            <img src="../assets/img/featured-4.png" alt="" />
-                        </div>
-                        <div class="block">
-                            <img src="../assets/img/featured-5.png" alt="" />
-                        </div>
-                    </div>
-                </div>
+                    <div class="text flex flex-col  w-[384px]">
+                        <h1
+                            class="text-black font-Bricolage-Grotesque text-[44px]  uppercase font-medium leading-normal">
+                            <span class="font-extrabold">Call us For Any </span>
+                            <span class="title">Plumbing Needs</span>
+                        </h1>
 
-                <div class="px-5">
-                    <div class="py-[15px]">
-                        <img src="../assets/img/featured-6.png" alt="" />
-                    </div>
-                </div>
-
-            <div class="bg-no-repeat bg-cover bg-top  min-h-[551px] overflow-hidden"
-            style="background-image: url('https://cdn.dorik.com/5e373b6c43a72a001f56dbf6/61a1f4035bfd7b0011fb92f9/images/cms-bg_2b06w496.svg'); padding-top: 7px; padding-bottom: 40px;">
-                <div class="relative w-full  border border-[#E6E1E4] rounded-[26px] pt-5 pb-[14px] px-5 mx-auto max-w-[997px] h-[504px] backdrop-blur-sm bg-[linear-gradient(130deg,rgba(155,144,196,0.1),rgba(62,67,127,0.2))] bg-no-repeat">
-            
-                    <div id="video-thumbnail" class="relative w-[957px] h-[470px]  rounded-[20px]">
-                      <img src="../assets/img/coverPhoto.webp" alt="cover" class="w-full h-full object-cover rounded-[20px]">
-            
-                      <div class="absolute inset-0 flex justify-center items-center">
-                        <button id="playButton" class="bg-[#8C3BFC] py-5 px-[30px] rounded-[10px] text-white text-[30px] hover:bg-[#27A6FE]">
-                          <svg class="w-[30px] h-[30px]" fill="currentColor" viewBox="0 0 384 512">
-                            <path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2  23-41s-8.7-32.2-23-41L73 39z" />
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  
-            
-                    <div id="video-container" class="hidden">
-                      <video id="mainVideo" controls class="w-full h-auto" poster="../assets/img/coverPhoto.webp">
-                        <source src="https://files.dorik.com/635bcad9b8a74e0091632998/videos/Dorik-AI-Intro-720p-vG0YQ.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                  </div>
-            </div>
-
-                  
-
-            </div>
-        </div>
-    </section>
+                        <div class="flex flex-col pt-[14px] gap-[9px]">
+                            <a href="tel:+180099382839"
+                                class="tel text-black font-Bricolage-Grotesque text-[34px] not-italic font-extrabold leading-normal  uppercase">
+                                +1800-9938-2839
+                            </a>
 
 
-
-
-
-
-
-    <section class="bg-white  relative">
-        <div
-            class="max-w-[1140px] md:h-[268px] bg-white mx-auto -mt-30 border-b border-gray-200 md:absolute inset-0 md:flex ">
-            <div class="md:w-1/3 h-[268px] inline-flex items-center flex-col py-[15px] px-[20px] text-center">
-                <img class="size-15 rounded-full object-cover object-center"
-                    src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/rsz_1screenshot_2022-07-20_at_21046_am_1775qlqn-fssiwV.webp"
-                    alt="">
-                <p class="mt-4.5 mb-2.5">I can't tell you how much I love Dorik! <span class="bg-[#FCF2DE]"><strong>I
-                            can create
-                            beautiful websites without even touching a line of code.</strong></span></p>
-                <h6 class="text-[20px]/[28px] text-heading font-semibold">Oday Mashalla</h6>
-                <p class="text-sm/[21px] font-normal mb-3.5">Sesign Director @ humblebee</p>
-            </div>
-            <div class="md:w-1/3 h-[268px] inline-flex items-center flex-col py-[15px] px-[20px] text-center">
-                <img class="size-15 rounded-full object-cover object-center"
-                    src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/1667061146730-PoXcN_.jpeg" alt="">
-                <p class="mt-4.5 mb-2.5"> <span class="bg-[#FCF2DE]"><strong>One
-                            of the best website building tools.</strong></span><br>Great product!!</p>
-                <h6 class="text-[20px]/[28px] text-heading font-semibold">Upen V.</h6>
-                <p class="text-sm/[21px] font-normal mb-3.5">Founder @ Siteoly</p>
-            </div>
-            <div class="md:w-1/3 h-[268px] inline-flex items-center flex-col py-[15px] px-[20px] text-center">
-                <img class="size-15 rounded-full object-cover object-center"
-                    src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/1685951024237-jB_6kq.jpeg" alt="">
-                <p class="mt-4.5 mb-2.5">I'm so in love with this tool!<span class="bg-[#FCF2DE]"><strong>Building
-                            websites has never been this FAST and EASY!</strong></span></p>
-                <h6 class="text-[20px]/[28px] text-heading font-semibold">Laura Ang</h6>
-                <p class="text-sm/[21px] font-normal mb-3.5">Design Fellow (ODD3), On Deck</p>
-            </div>
-        </div>
-        <div class="pt-50 text-center">
-            <h6 class="text-heading text-[20px]/[28px] font-semibold"><span class="text-[#de238e]">♡</span> Loved by
-                cool people from</h6>
-            <div class="inline-flex items-center justify-center gap-10 flex-wrap my-8">
-                <img style="filter: grayscale(100%) sepia(0%) blur(0px) brightness(100%) hue-rotate(0deg) saturate(100%) opacity(100%) contrast(100%) invert(0%);"  
-                 class="dorik-img-brand w-[95px] h-[40px]"
-                    src="https://files.dorik.com/635bcad9b8a74e0091632998/netflix_logo_rgb-wjeQyf.png" alt="">
-                <img style="filter: grayscale(100%) sepia(0%) blur(0px) brightness(100%) hue-rotate(0deg) saturate(100%) opacity(100%) contrast(100%) invert(0%);"  class="dorik-img-brand size-10"
-                    src="https://files.dorik.com/635bcad9b8a74e0091632998/flippa-logos-idibb6mjpq-gOVSUs.png" alt="">
-                <img style="filter: grayscale(100%) sepia(0%) blur(0px) brightness(100%) hue-rotate(0deg) saturate(100%) opacity(100%) contrast(100%) invert(0%);"  class="dorik-img-brand w-[90px] h-[40px]"
-                    src="https://files.dorik.com/635bcad9b8a74e0091632998/wordmark-nospace-stacked-red-T6WNqN.webp"
-                    alt="">
-                <img style="filter: grayscale(100%) sepia(0%) blur(0px) brightness(100%) hue-rotate(0deg) saturate(100%) opacity(100%) contrast(100%) invert(0%);"  class="dorik-img-brand size-10"
-                    src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/iimcb-blue-transparent-background-IrBAFT.png"
-                    alt="">
-                <img style="filter: grayscale(100%) sepia(0%) blur(0px) brightness(100%) hue-rotate(0deg) saturate(100%) opacity(100%) contrast(100%) invert(0%);"  class="dorik-img-brand w-[83px] h-[40px]"
-                    src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/5b3a97163c43bae706308fca_logo_horz_mint_bg@2x-ke4VOy.png"
-                    alt="">
-                <img style="filter: grayscale(100%) sepia(0%) blur(0px) brightness(100%) hue-rotate(0deg) saturate(100%) opacity(100%) contrast(100%) invert(0%);"  class="dorik-img-brand w-[160px] h-[40px]"
-                    src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/decathlon-logo-qh264k.svg" alt="">
-                <img style="filter: grayscale(100%) sepia(0%) blur(0px) brightness(100%) hue-rotate(0deg) saturate(100%) opacity(100%) contrast(100%) invert(0%);"  class="dorik-img-brand size-10"
-                    src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/channels4_profile-Ui18Oe.jpeg" alt="">
-                <img style="filter: grayscale(100%) sepia(0%) blur(0px) brightness(100%) hue-rotate(0deg) saturate(100%) opacity(100%) contrast(100%) invert(0%);"  class="dorik-img-brand w-[160px] h-[16px]"
-                    src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/vivacom-logo-Mc4Rec.svg" alt="">
-            </div>
-        </div>
-    </section>
-
-
-    <div class="pb-10">
-        <div class="container">
-            <div class="bg-white">
-                <div class="mx-[-16px] flex flex-wrap">
-
-                    <div class="pt-16">
-                        <div class="bg-[#FFF9F3] px-5 py-8 rounded-[5px] flex flex-wrap ">
-                            <div class="w-6/12 px-4">
-                                <div class="py-[15px] ">
-                                    <h3 class="h3 mb-5">Transform Your Ideas into Reality with AI</h3>
-                                    <p class="text-[20px] leading-[30px] font-normal">Bring your creative vision to life
-                                        with Dorik AI</p>
-                                    <ul class="flex flex-col gap-2 py-5">
-                                        <li class="flex items-center gap-1 font-medium text-[18px]">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-check text-[#3a30ba]" color="undefined">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            Website Generation
-                                        </li>
-                                        <li class="flex items-center gap-1 font-medium text-[18px]">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-check text-[#3a30ba]" color="undefined">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            AI-Generated Contents (Text & Images)
-                                        </li>
-                                        <li class="flex items-center gap-1 font-medium text-[18px]">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-check text-[#3a30ba]" color="undefined">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            Build Website in Any Language
-                                        </li>
-                                    </ul>
-                                    <div class="inline-block py-5">
-                                        <a class="btns" href="#">
-                                            Try Dorik Now
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                                data-icon="arrow-right"
-                                                class="svg-inline--fa fa-arrow-right fa-fw icon w-[12px] h-[12px]"
-                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                                data-testid="icon-test">
-                                                <path fill="currentColor"
-                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-6/12 px-4">
-                                <div class="">
-                                    <img class="object-cover" src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/website-generation-1-GWTEAs.png
-                                    " alt="">
-                                </div>
-                                <p class="text-center text-[18px]">Prompt: <em>"Build a website for my coffeeshop"</em>
-                                </p>
-                            </div>
-                            <div class="w-full px-4 py-[15px]">
-                                <hr class="border-0 h-px" style="background-color: rgba(8, 10, 71, 0.1);">
-                            </div>
-                            <div class="w-1/3 px-4">
-                                <div class="py-[15px] pt-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-layout text-[#3a30ba]" color="[object Object]">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                        <line x1="3" y1="9" x2="21" y2="9"></line>
-                                        <line x1="9" y1="21" x2="9" y2="9"></line>
-                                    </svg>
-                                    <h6 class="h6 py-5">Stunning Websites</h6>
-                                    <p class="text-[18px]">Type a prompt, get a full website using the power of
-                                        cutting-edge AI technology</p>
-                                </div>
-                            </div>
-                            <div class="w-1/3 px-4">
-                                <div class="py-[15px] pt-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-edit text-[#3a30ba]" color="[object Object]">
-                                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                                    </svg>
-                                    <h6 class="h6 py-5">Compelling Copies</h6>
-                                    <p class="text-[18px]">Generate all your website content in two steps—a prompt & a
-                                        click!</p>
-                                </div>
-                            </div>
-                            <div class="w-1/3 px-4">
-                                <div class="py-[15px] pt-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-image text-[#3a30ba] color=" [object Object]">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                                        <polyline points="21 15 16 10 5 21"></polyline>
-                                    </svg>
-                                    <h6 class="h6 py-5">Pixel Perfect Images</h6>
-                                    <p class="text-[18px]">Type a prompt and generate the exact image on your mind.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pt-16">
-                        <div class="bg-[#FDEFF7] px-5 py-8 rounded-[5px] flex flex-wrap ">
-                            <div class="w-6/12 px-4">
-                                <div class="py-[15px] ">
-                                    <h3 class="h3 mb-5">No-Code Website Builder</h3>
-                                    <p class="text-[20px] leading-[30px] font-normal">Unleash your creativity with our
-                                        easy-to-use and powerful website builder.</p>
-                                    <ul class="flex flex-col gap-2 py-5">
-                                        <li class="flex items-center gap-1 font-medium text-[18px]">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-check text-[#3a30ba]" color="undefined">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            Create websites in minutes without any code
-                                        </li>
-                                        <li class="flex items-center gap-1 font-medium text-[18px]">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-check text-[#3a30ba]" color="undefined">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            Say goodbye to lengthy development time
-                                        </li>
-                                        <li class="flex items-center gap-1 font-medium text-[18px]">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-check text-[#3a30ba]" color="undefined">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            Customize everything to match your vision
-                                        </li>
-                                    </ul>
-                                    <div class="inline-block py-5">
-                                        <a class="btns" href="#">
-                                            Try Dorik Now
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                                data-icon="arrow-right"
-                                                class="svg-inline--fa fa-arrow-right fa-fw icon w-[12px] h-[12px]"
-                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                                data-testid="icon-test">
-                                                <path fill="currentColor"
-                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-6/12 px-4">
-                                <div class="">
-                                    <img class="object-cover" src="	https://cdn.cmsfly.com/635bcad9b8a74e0091632998/website-builder-wVoV4o.png" alt="">
-                                </div>
-                            </div>
-                            <div class="w-full px-4 py-[15px]">
-                                <hr class="border-0 h-px" style="background-color: rgba(8, 10, 71, 0.1);">
-                            </div>
-                            <div class="w-1/3 px-4">
-                                <div class="py-[15px] pt-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-pen-tool text-[#3a30ba] " color="[object Object]">
-                                        <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
-                                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
-                                        <path d="M2 2l7.586 7.586"></path>
-                                        <circle cx="11" cy="11" r="2"></circle>
-                                    </svg>
-                                    <h6 class="h6 py-5">Drag & Drop Builder</h6>
-                                    <p class="text-[18px]">Drag-and-drop builder makes website creation a breeze. No
-                                        coding is required.</p>
-                                </div>
-                            </div>
-                            <div class="w-1/3 px-4">
-                                <div class="py-[15px] pt-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-box text-[#3a30ba]" color="[object Object]">
-                                        <path
-                                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
-                                        </path>
-                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                                    </svg>
-                                    <h6 class="h6 py-5">Templates</h6>
-                                    <p class="text-[18px]">With pre-designed templates, you can quickly build your
-                                        website. </p>
-                                </div>
-                            </div>
-                            <div class="w-1/3 px-4">
-                                <div class="py-[15px] pt-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-grid text-[#3a30ba]" color="[object Object]">
-                                        <rect x="3" y="3" width="7" height="7"></rect>
-                                        <rect x="14" y="3" width="7" height="7"></rect>
-                                        <rect x="14" y="14" width="7" height="7"></rect>
-                                        <rect x="3" y="14" width="7" height="7"></rect>
-                                    </svg>
-                                    <h6 class="h6 py-5">250+ UI Blocks</h6>
-                                    <p class="text-[18px]">Pre-designed UI blocks to make your building journey faster
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pt-16">
-                        <div class="bg-[#F0F9F6] px-5 py-8 rounded-[5px] flex flex-wrap ">
-                            <div class="w-6/12 px-4">
-                                <div class="py-[15px] ">
-                                    <h3 class="h3 mb-5">White-Label CMS</h3>
-                                    <p class="text-[20px] leading-[30px] font-normal">A complete solution to build
-                                        websites under your brand for your clients.</p>
-                                    <ul class="flex flex-col gap-2 py-5">
-                                        <li class="flex items-center gap-1 font-medium text-[18px]">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-check text-[#3a30ba]" color="undefined">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            Add your own brand’s logo and colors
-                                        </li>
-                                        <li class="flex items-center gap-1 font-medium text-[18px]">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-check text-[#3a30ba]" color="undefined">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            Dedicated dashboard for your client
-                                        </li>
-                                        <li class="flex items-center gap-1 font-medium text-[18px]">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-check text-[#3a30ba]" color="undefined">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            Build anything from blogs to directories
-                                        </li>
-                                    </ul>
-                                    <div class="inline-block py-5">
-                                        <a class="btns" href="#">
-                                            Try Dorik Now
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                                data-icon="arrow-right"
-                                                class="svg-inline--fa fa-arrow-right fa-fw icon w-[12px] h-[12px]"
-                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                                data-testid="icon-test">
-                                                <path fill="currentColor"
-                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-6/12 px-4">
-                                <div class="">
-                                    <img class="object-cover" src="	https://cdn.cmsfly.com/635bcad9b8a74e0091632998/cms-QPFn1k.png" alt="">
-                                </div>
-                            </div>
-                            <div class="w-full px-4 py-[15px]">
-                                <hr class="border-0 h-px" style="background-color: rgba(8, 10, 71, 0.1);">
-                            </div>
-                            <div class="w-1/3 px-4">
-                                <div class="py-[15px] pt-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-edit-3 text-[#3a30ba]" color="[object Object]">
-                                        <path d="M12 20h9"></path>
-                                        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-                                    </svg>
-                                    <h6 class="h6 py-5">Built-in Blogging Platform</h6>
-                                    <p class="text-[18px]">Build and publish blogs with all the features you need to
-                                        rank on Google and grow audience.</p>
-                                </div>
-                            </div>
-                            <div class="w-1/3 px-4">
-                                <div class="py-[15px] pt-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-clipboard text-[#3a30ba]" color="[object Object]">
-                                        <path
-                                            d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
-                                        </path>
-                                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
-                                    </svg>
-                                    <h6 class="h6 py-5">White Label Dashboard</h6>
-                                    <p class="text-[18px]">A white-label dashboard for your clients that you can brand
-                                        as your own</p>
-                                </div>
-                            </div>
-                            <div class="w-1/3 px-4">
-                                <div class="py-[15px] pt-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-credit-card text-[#3a30ba]" color="[object Object]">
-                                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                        <line x1="1" y1="10" x2="23" y2="10"></line>
-                                    </svg>
-                                    <h6 class="h6 py-5">Client Billing</h6>
-                                    <p class="text-[18px]">Send invoices and receive payments from your clients directly
-                                        from your dashboard.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pt-16 pb-5">
-                        <div class="bg-[#EEEBFA] px-5 py-8 rounded-[5px] flex flex-wrap ">
-                            <div class="w-6/12 px-4">
-                                <div class="py-[15px] ">
-                                    <h3 class="h3 mb-5">Build with Airtable Data</h3>
-                                    <p class="text-[20px] leading-[30px] font-normal">Bring your Airtable Data to
-                                        beautiful interfaces with our Airtable elements</p>
-                                    <ul class="flex flex-col gap-2 py-5">
-                                        <li class="flex items-center gap-1 font-medium text-[18px]">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-check text-[#3a30ba]" color="undefined">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            Present your data from Airtable into beautiful interfaces
-                                        </li>
-                                        <li class="flex items-center gap-1 font-medium text-[18px]">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-check text-[#3a30ba]" color="undefined">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            Easy-to-use filter and search option for your users
-                                        </li>
-                                        <li class="flex items-center gap-1 font-medium text-[18px]">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-check text-[#3a30ba]" color="undefined">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            Create blogs, job boards, shops, profiles, and more
-                                        </li>
-                                    </ul>
-                                    <div class="inline-block py-5">
-                                        <a class="btns" href="#">
-                                            Try Dorik Now
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                                data-icon="arrow-right"
-                                                class="svg-inline--fa fa-arrow-right fa-fw icon w-[12px] h-[12px]"
-                                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                                data-testid="icon-test">
-                                                <path fill="currentColor"
-                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-6/12 px-4">
-                                <div class="">
-                                    <img class="object-cover" src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/airtable-integrations-_QBDfM.png" alt="">
-                                </div>
-                            </div>
-                            <div class="w-full px-4 py-[15px]">
-                                <hr class="border-0 h-px" style="background-color: rgba(8, 10, 71, 0.1);">
-                            </div>
-                            <div class="w-1/3 px-4">
-                                <div class="py-[15px] pt-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-layout text-[#3a30ba]" color="[object Object]">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                        <line x1="3" y1="9" x2="21" y2="9"></line>
-                                        <line x1="9" y1="21" x2="9" y2="9"></line>
-                                    </svg>
-                                    <h6 class="h6 py-5">Beautiful Layouts</h6>
-                                    <p class="text-[18px]">Showcase your data in any layout, like the grid, table, job
-                                        board, etc.</p>
-                                </div>
-                            </div>
-                            <div class="w-1/3 px-4">
-                                <div class="py-[15px] pt-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-zap text-[#3a30ba]" color="[object Object]">
-                                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                                    </svg>
-                                    <h6 class="h6 py-5">Realtime Upx-4ate</h6>
-                                    <p class="text-[18px]">A white-label dashboard for your clients that you can brand
-                                        as your own</p>
-                                </div>
-                            </div>
-                            <div class="w-1/3 px-4">
-                                <div class="py-[15px] pt-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-database text-[#3a30ba]" color="[object Object]">
-                                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                    </svg>
-                                    <h6 class="h6 py-5">Advanced Customization</h6>
-                                    <p class="text-[18px]">Use Airtable as a data source in Dorik CMS and customize
-                                        everything.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <section id="join">
-        <div class="pt-[60px] pb-[100px]">
-            <div class="container">
-                <div class="mx-[-16px] flex flex-wrap">
-                    <div class="w-6/12 px-4">
-                        <h2 class="h2">Join over 100k+ happy users from around the world!</h2>
-                        <div class="inline-block py-8">
-                            <a class="btns" href="#">
-                                Wall of Love
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right"
-                                    class="svg-inline--fa fa-arrow-right fa-fw icon w-[12px] h-[12px]" role="img"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test">
-                                    <path fill="currentColor"
-                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
-                                    </path>
-                                </svg>
+                            <a href="#"
+                                class="self-start  inline-block uppercase text-[16px] font-normal leading-normal  text-white rounded-[35px] py-[10px] px-[17.5px] bg-[#DD3142]">
+                                See All Service
                             </a>
                         </div>
                     </div>
-                    <div class="w-6/12 px-4">
-                        <div class="text-center">
-                            <h6 class="h6 text-center mb-7"><span class="text-[#DE238E]">♡</span> Loved by cool
-                                people from</h6>
-                            <div class="flex gap-10 gap-y-[30px] justify-center items-center flex-wrap">
-                                <div class="brand-bg">
-                                    <img class="object-cover h-[40px]"
-                                        src="https://files.dorik.com/635bcad9b8a74e0091632998/netflix_logo_rgb-wjeQyf.png"
-                                        alt="">
-                                </div>
-                                <div class="brand-bg">
-                                    <img class="object-cover h-[40px]"
-                                        src="https://files.dorik.com/635bcad9b8a74e0091632998/flippa-logos-idibb6mjpq-gOVSUs.png"
-                                        alt="">
-                                </div>
-                                <div class="brand-bg">
-                                    <img class="object-cover h-[40px]"
-                                        src="https://files.dorik.com/635bcad9b8a74e0091632998/wordmark-nospace-stacked-red-T6WNqN.webp"
-                                        alt="">
-                                </div>
-                                <div class="brand-bg">
-                                    <img class="object-cover h-[40px]"
-                                        src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/iimcb-blue-transparent-background-IrBAFT.png"
-                                        alt="">
-                                </div>
-                                <div class="brand-bg">
-                                    <img class="object-cover h-[40px]"
-                                        src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/5b3a97163c43bae706308fca_logo_horz_mint_bg@2x-ke4VOy.png"
-                                        alt="">
-                                </div>
-                                <div class="brand-bg">
-                                    <img class="object-cover h-[40px]"
-                                        src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/decathlon-logo-qh264k.svg"
-                                        alt="">
-                                </div>
-                                <div class="brand-bg">
-                                    <img class="object-cover h-[40px]"
-                                        src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/channels4_profile-Ui18Oe.jpeg"
-                                        alt="">
-                                </div>
-                                <div class="brand-bg">
-                                    <img class="object-cover h-[16px]"
-                                        src="https://cdn.cmsfly.com/635bcad9b8a74e0091632998/vivacom-logo-Mc4Rec.svg"
-                                        alt="">
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="flex items-start justify-center relative">
+                        <img src="../assets/img/banner1.png" alt="" class="z-0">
+                        <img src="../assets/img/banner2.png" alt="" class="-ml-[35px] z-10 pt-[48px]">
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
 
-    <section id="design">
-        <div class="pt-30 bg-[#030521] text-white">
-            <div class="container">
-                <div class="mx-[-16px] flex flex-wrap">
-                    <div class="w-full px-4">
-                        <h2 class="leading-[1] text-[60px] tracking-[-1px] text-white font-bold mb-5">Beautiful designs,
-                            <br> Endless possibilities</h2>
-                    </div>
-                    <div class="pt-10 pb-20 flex flex-wrap w-full">
-                        <div class="w-1/3 px-4">
-                            <div class="bg-transparent border-1 border-[#1D1E38] p-[30px]">
-                                <button
-                                    class="py-[10px] text-[#d1d0db] rounded-[5px] bg-[rgba(255, 255, 255, 0)] leading-[18px] cursor-pointer hover:text-white text-[24px] mb-3">
-                                    Amazing Templates
-                                </button>
-                                <p class="text-[18px] text-[#CDCDD3]"><span>100</span><a
-                                        class="underline decoration-[#3A30BA]" href="#">+ Beautiful Templates</a></p>
-                            </div>
-                        </div>
-                        <div class="w-1/3 px-4">
-                            <div class="bg-transparent border-1 border-[#1D1E38] p-[30px]">
-                                <button
-                                    class="py-[10px] text-[#d1d0db] rounded-[5px] bg-[rgba(255, 255, 255, 0)] leading-[18px] cursor-pointer hover:text-white text-[24px] mb-3">
-                                    UI Blocks
-                                </button>
-                                <p class="text-[18px] text-[#CDCDD3]"><span>250</span><a
-                                        class="underline decoration-[#3A30BA]" href="#">+ Stunning UI Blocks </a></p>
-                            </div>
-                        </div>
-                        <div class="w-1/3 px-4">
-                            <div class="bg-transparent border-1 border-[#1D1E38] p-[30px]">
-                                <button
-                                    class="py-[10px] text-[#d1d0db] rounded-[5px] bg-[rgba(255, 255, 255, 0)] leading-[18px] cursor-pointer hover:text-white text-[24px] mb-3">
-                                    Elements
-                                </button>
-                                <p class="text-[18px] text-[#CDCDD3]"><span>20</span><a
-                                        class="underline decoration-[#3A30BA]" href="#">20+ Elements</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <img class="w-full object-contain"
-                    src="https://cdn.dorik.com/5e373b6c43a72a001f56dbf6/61a1f4035bfd7b0011fb92f9/images/template-3_eolpvj63_ithba1dq.webp"
-                    alt="">
-            </div>
-        </div>
-    </section>
+    <section id="services" class="bg-[#DD3142] ">
+        <div class="container">
+            <div class="">
+                <div class="flex justify-center items-center  pt-[62px] pb-[19.5px] mx-auto">
 
-    <section id="no-maintain">
-        <div class="pt-[120px] pb-[80px]">
-            <div class="container">
-                <div class="mx-[-16px] flex flex-wrap">
-                    <div class="w-full px-4 text-center">
-                        <div class="mb-20">
-                            <h2 class="h2 mb-6">No Maintenance, More Freedom. </h2>
-                            <p class="text-2xl leading-[36px]">The perfect launchpad for your online presence</p>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4 ">
-                        <div class="py-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-server text-[#8C3BFC]"
-                                color="[object Object]">
-                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                            </svg>
-                            <h5 class="h6 py-4">Reliable Hosting & CDN</h5>
-                            <p class="text-[18px]">We host the websites on AWS & DigitalOcean and serve static content
-                                from our Global CDN</p>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4">
-                        <div class="py-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-shield text-[#DE238E]"
-                                color="[object Object]">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                            </svg>
-                            <h5 class="h6 py-4">Free SSL/HTTPS</h5>
-                            <p class="text-[18px]">Every website built and hosted on our platform comes with a free SSL
-                                certificate issued by Let's Encrypt</p>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4">
-                        <div class="py-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-user-plus text-[#27A6FE]"
-                                color="[object Object]">
-                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="8.5" cy="7" r="4"></circle>
-                                <line x1="20" y1="8" x2="20" y2="14"></line>
-                                <line x1="23" y1="11" x2="17" y2="11"></line>
-                            </svg>
-                            <h5 class="h6 py-4">Free SSL/HTTPS</h5>
-                            <p class="text-[18px]">Every website built and hosted on our platform comes with a free SSL
-                                certificate issued by Let's Encrypt</p>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4">
-                        <div class="py-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-credit-card text-[#27A6FE]"
-                                color="[object Object]">
-                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                <line x1="1" y1="10" x2="23" y2="10"></line>
-                            </svg>
-                            <h5 class="h6 py-4">Payment Integration</h5>
-                            <p class="text-[18px]">Integrate PayPal, Stripe, & Gumroad without code to receive payments
-                                from your users. </p>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4">
-                        <div class="py-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-cloud-snow text-[#8C3BFC]"
-                                color="[object Object]">
-                                <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path>
-                                <line x1="8" y1="16" x2="8.01" y2="16"></line>
-                                <line x1="8" y1="20" x2="8.01" y2="20"></line>
-                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                                <line x1="12" y1="22" x2="12.01" y2="22"></line>
-                                <line x1="16" y1="16" x2="16.01" y2="16"></line>
-                                <line x1="16" y1="20" x2="16.01" y2="20"></line>
-                            </svg>
-                            <h5 class="h6 py-4">PUnlimited Storage & Bandwidth</h5>
-                            <p class="text-[18px]">Don’t worry about your site’s storage and bandwidth because Dorik
-                                provides you with all the site storage you need.</p>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4">
-                        <div class="py-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-folder-minus text-[#DE238E]"
-                                color="[object Object]">
-                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
-                                </path>
-                                <line x1="9" y1="14" x2="15" y2="14"></line>
-                            </svg>
-                            <h5 class="h6 py-4">Forms</h5>
-                            <p class="text-[18px]">Add subscription & contact form easily to your website. Connect
-                                popular platforms like Zapier, MailChimp, etc.</p>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4">
-                        <div class="py-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-bar-chart-2 text-[#DE238E]"
-                                color="[object Object]">
-                                <line x1="18" y1="20" x2="18" y2="10"></line>
-                                <line x1="12" y1="20" x2="12" y2="4"></line>
-                                <line x1="6" y1="20" x2="6" y2="14"></line>
-                            </svg>
-                            <h5 class="h6 py-4">User Analytics</h5>
-                            <p class="text-[18px]">Measure and analyze user data to get an understanding of user
-                                behavior across your web pages</p>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4">
-                        <div class="py-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-lock text-[#27A6FE]"
-                                color="[object Object]">
-                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                            </svg>
-                            <h5 class="h6 py-4">Password Protected Pages</h5>
-                            <p class="text-[18px]">Protect any page on your website with a password. Securely share your
-                                pages with your clients. </p>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4">
-                        <div class="py-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-search text-[#8C3BFC]"
-                                color="[object Object]">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            </svg>
-                            <h5 class="h6 py-4">Native SEO</h5>
-                            <p class="text-[18px]">Optimize your content for SEO and social media to maximize the reach
-                                of each post.</p>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4">
-                        <div class="py-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-globe text-[#8C3BFC]"
-                                color="[object Object]">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <div class="flex flex-col px-[53px] max-w-[338px] text-center text-white">
+                        <div class="pb-[13px] mx-auto"><svg xmlns="http://www.w3.org/2000/svg" width="51" height="52"
+                                viewBox="0 0 51 52" fill="none">
                                 <path
-                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                                </path>
-                            </svg>
-                            <h5 class="h6 py-4">Custom Domain</h5>
-                            <p class="text-[18px]">Connect your custom domain or subdomain easily from any domain
-                                provider to our platform.</p>
+                                    d="M49.7704 4.12841H44.7125C44.1537 4.12841 43.7009 4.5813 43.7009 5.14V5.6458H40.6661C40.2857 5.6458 39.9547 5.85601 39.7819 6.16636C30.6144 6.52568 23.2667 14.0946 23.2667 23.3487V24.3603H22.7609C22.2022 24.3603 21.7493 24.8132 21.7493 25.3719V29.4183C21.7493 29.977 22.2022 30.4299 22.7609 30.4299H23.2667V34.1727C23.2667 35.1176 22.8984 36.0058 22.2298 36.6764C21.5601 37.3441 20.6709 37.7133 19.7261 37.7133C18.7813 37.7133 17.8921 37.3441 17.2224 36.6764C16.5537 36.0058 16.1855 35.1176 16.1855 34.1727V30.4299H16.6913C17.25 30.4299 17.7029 29.977 17.7029 29.4183V25.3719C17.7029 24.8132 17.25 24.3603 16.6913 24.3603H16.1855V11.0731C16.4876 10.8981 16.6913 10.5722 16.6913 10.198V7.16319H17.1971C17.7558 7.16319 18.2087 6.7103 18.2087 6.1516V1.09363C18.2087 0.534922 17.7558 0.0820312 17.1971 0.0820312H1.01159C0.452891 0.0820312 0 0.534922 0 1.09363V6.1516C0 6.7103 0.452891 7.16319 1.01159 7.16319H1.51739V10.198C1.51739 10.5722 1.72113 10.8982 2.02319 11.0731V24.3603H1.51739C0.958688 24.3603 0.505797 24.8132 0.505797 25.3719V29.4183C0.505797 29.977 0.958688 30.4299 1.51739 30.4299H2.02319V34.1727C2.02319 36.5631 2.49156 38.8807 3.41413 41.0637C3.85822 42.1128 4.40751 43.1243 5.04684 44.0702C5.6801 45.0079 6.40744 45.889 7.20862 46.6902C8.0098 47.4914 8.8909 48.2187 9.82865 48.852C10.7745 49.4913 11.7861 50.0406 12.8351 50.4847C15.0181 51.4073 17.3352 51.8756 19.7256 51.8756L19.7261 51.8706V51.8746V51.8756C21.0412 51.8756 22.2869 51.7381 23.5292 51.466C24.737 51.2009 25.9209 50.8074 27.0478 50.2945C28.1535 49.7918 29.2127 49.1706 30.195 48.4504C31.1691 47.7342 32.0736 46.9168 32.8819 46.0185C33.2551 45.6038 33.2218 44.9634 32.8071 44.5901C32.621 44.4222 32.3812 44.3302 32.1303 44.3302C31.8441 44.3302 31.57 44.4516 31.3787 44.664C28.4066 47.9608 24.1599 49.8525 19.7261 49.8525C15.5391 49.8525 11.602 48.2208 8.63901 45.2598C5.67808 42.2969 4.04638 38.3597 4.04638 34.1727V30.4299H14.1623V34.1727C14.1623 34.9244 14.31 35.6527 14.5993 36.3386C14.8795 37.0012 15.2811 37.596 15.792 38.1068C16.3028 38.6177 16.8977 39.0183 17.5603 39.2995C18.2461 39.5888 18.9745 39.7365 19.7261 39.7365C20.4777 39.7365 21.206 39.5888 21.8919 39.2995C22.5545 39.0183 23.1493 38.6177 23.6602 38.1068C24.171 37.596 24.5726 37.0012 24.8528 36.3386C25.1422 35.6527 25.2898 34.9244 25.2898 34.1727V30.4299H35.4058V34.1727C35.4058 35.157 35.3137 36.1423 35.1327 37.1023C35.0821 37.3684 35.1387 37.6375 35.2915 37.86C35.4432 38.0836 35.6739 38.2343 35.9389 38.2839C36.0016 38.296 36.0653 38.3021 36.1281 38.3021C36.6126 38.3021 37.0304 37.9551 37.1204 37.4776C37.3248 36.3952 37.429 35.2835 37.429 34.1727V30.4299H37.9348C38.4935 30.4299 38.9464 29.977 38.9464 29.4183V25.3719C38.9464 24.8132 38.4935 24.3603 37.9348 24.3603H37.429V23.551C37.429 22.0446 38.4631 20.7754 39.8587 20.4159C40.0433 20.6608 40.3358 20.8197 40.6661 20.8197H43.7009V21.3255C43.7009 21.8842 44.1537 22.3371 44.7125 22.3371H49.7704C50.3291 22.3371 50.782 21.8842 50.782 21.3255V5.14C50.782 4.5813 50.3291 4.12841 49.7704 4.12841ZM15.6797 28.4067H2.52898V26.3835H15.6797V28.4067ZM14.1623 11.2096V24.3603H4.04638V11.2096H14.1623ZM7.58695 9.18638V7.16319H10.6217V9.18638H7.58695ZM12.6449 9.18638V7.16319H14.6681V9.18638H12.6449ZM5.56377 9.18638H3.54058V7.16319H5.56377V9.18638ZM2.02319 5.14V2.10522H16.1855V5.14H2.02319ZM36.9232 28.4067H23.7725V26.3835H36.9232V28.4067ZM39.6545 18.3883C37.2363 18.8613 35.4058 20.9964 35.4058 23.551V24.3603H25.2898V23.3487C25.2898 15.2535 31.6626 8.61847 39.6545 8.19613V18.3883ZM43.7009 18.7965H41.6777V16.7733H43.7009V18.7965ZM43.7009 14.7501H41.6777V11.7154H43.7009V14.7501ZM43.7009 9.69217H41.6777V7.66899H43.7009V9.69217ZM48.7588 20.3139H45.724V6.1516H48.7588V20.3139Z"
+                                    fill="white" />
+                                <path
+                                    d="M10.1628 40.7209C9.97461 40.4417 9.66101 40.2758 9.32415 40.2758C9.12183 40.2758 8.92659 40.3354 8.75867 40.4487C8.53511 40.6005 8.38337 40.8301 8.33178 41.0951C8.28019 41.3602 8.33582 41.6293 8.48655 41.8538C10.3145 44.5588 13.0488 46.5153 16.1868 47.362C16.2738 47.3852 16.3628 47.3974 16.4508 47.3974C16.9071 47.3974 17.3087 47.0899 17.427 46.6488C17.5727 46.1106 17.253 45.5543 16.7138 45.4086C14.0453 44.6893 11.7186 43.0243 10.1628 40.7209Z"
+                                    fill="white" />
+                                <path
+                                    d="M29.1118 16.8553C28.8376 17.3421 29.01 17.9589 29.4969 18.2331C29.6538 18.3215 29.8243 18.3634 29.9923 18.3634C30.3457 18.3634 30.6889 18.1779 30.8747 17.848C30.9775 17.6655 31.0869 17.4834 31.2 17.3065C32.2542 15.6586 33.7254 14.3079 35.4545 13.4C35.9491 13.1403 36.1396 12.5287 35.88 12.0341C35.6202 11.5394 35.0085 11.3491 34.5141 11.6086C32.4743 12.6796 30.739 14.2729 29.4958 16.2162C29.3623 16.4249 29.2331 16.6399 29.1118 16.8553Z"
+                                    fill="white" />
+                                <path
+                                    d="M34.682 42.6024C35.2407 42.6024 35.6936 42.1495 35.6936 41.5908C35.6936 41.0321 35.2407 40.5792 34.682 40.5792C34.1233 40.5792 33.6704 41.0321 33.6704 41.5908C33.6704 42.1495 34.1233 42.6024 34.682 42.6024Z"
+                                    fill="white" />
+                            </svg></div>
+                        <h6 class="pb-[11px] text-sm font-medium leading-normal">Residental Service</h6>
+                        <div class="text-[12px] w-[228px] font-normal pb-[13px] leading-[133.5%]">Professional plumbing
+                            services for homes and businesses you can rely on. Trusted by the local community for years
                         </div>
+                        <a href="#"
+                            class="rounded-[5px] inline-block mr-[53px] self-start mx-auto bg-[#F6FAFB] text-black text-center text-[16px] font-normal py-[4px] px-[17px] leading-normal underline decoration-solid">Learn
+                            More</a>
                     </div>
-                    <div class="w-1/3 px-4">
-                        <div class="py-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-code text-[#DE238E]"
-                                color="[object Object]">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                            <h5 class="h6 py-4">AI Code Export</h5>
-                            <p class="text-[18px]">Export your AI-generated website's clean and un-minified HTML/CSS/JS
-                                code with Media files.</p>
-                        </div>
+
+
+                    <div class="w-px h-[229px] mt-[-14px] mr-[3px] ml-[-2px] bg-[#E6E6EB]"></div>
+
+
+                    <div class="flex flex-col px-[53px] max-w-[338px] text-center text-white">
+                        <div class="pb-[15px] mx-auto pr-[6px]"><svg xmlns="http://www.w3.org/2000/svg" width="48"
+                                height="48" viewBox="0 0 48 48" fill="none">
+                                <path
+                                    d="M8.44226 37.1202C7.77026 37.1202 7.12427 37.288 6.55115 37.6029C3.5321 33.7328 1.875 28.9252 1.875 24C1.875 11.8 11.8 1.875 24 1.875C25.4832 1.875 26.9656 2.02258 28.4063 2.31372C28.9131 2.41626 29.4082 2.08813 29.5107 1.58057C29.6133 1.073 29.2852 0.578613 28.7776 0.475708C27.215 0.160034 25.6077 0 24 0C17.5895 0 11.5624 2.49646 7.02942 7.02942C2.49646 11.5624 0 17.5895 0 24C0 29.3925 1.83105 34.6549 5.16467 38.8737C4.73547 39.5149 4.50476 40.2686 4.50476 41.0577C4.50476 42.1095 4.91455 43.0983 5.65833 43.8417C6.40173 44.5854 7.3905 44.9952 8.44226 44.9952C9.49402 44.9952 10.4828 44.5854 11.2266 43.8417C11.9703 43.0983 12.3798 42.1091 12.3798 41.0574C12.3798 40.006 11.9703 39.0168 11.2266 38.2734C10.4828 37.5297 9.49402 37.1202 8.44226 37.1202ZM9.90051 42.516C9.51123 42.9056 8.99304 43.1202 8.44226 43.1202C7.89148 43.1202 7.37366 42.9056 6.98401 42.516C6.59436 42.1263 6.37976 41.6085 6.37976 41.0577C6.37976 40.5066 6.59436 39.9888 6.98401 39.5991C7.37329 39.2095 7.89148 38.9952 8.44226 38.9952C8.99304 38.9952 9.51087 39.2098 9.90051 39.5991C10.2902 39.9888 10.5048 40.5066 10.5048 41.0577C10.5048 41.6085 10.2902 42.1263 9.90051 42.516Z"
+                                    fill="white" />
+                                <path
+                                    d="M42.8346 9.12524C43.8538 7.59631 43.6901 5.50598 42.3421 4.15796C41.5983 3.41455 40.6095 3.00476 39.5578 3.00476C38.506 3.00476 37.5173 3.41455 36.7735 4.15796C36.0297 4.90173 35.6203 5.8905 35.6203 6.94226C35.6203 7.99402 36.0297 8.98279 36.7735 9.72656C37.5173 10.4703 38.506 10.8798 39.5578 10.8798C40.2298 10.8798 40.8758 10.712 41.4489 10.3971C44.4679 14.2676 46.125 19.0748 46.125 24C46.125 36.2 36.2 46.125 24 46.125C22.5315 46.125 21.063 45.9803 19.6359 45.6947C19.1283 45.5933 18.6343 45.9225 18.5325 46.4301C18.4311 46.938 18.7603 47.4316 19.2679 47.5334C20.8158 47.8429 22.4081 48 24 48C30.4106 48 36.4377 45.5035 40.9706 40.9706C45.5036 36.4376 48 30.4105 48 24C48 18.6072 46.1686 13.3444 42.8346 9.12524ZM38.0995 8.40088C37.7099 8.01123 37.4953 7.49341 37.4953 6.94226C37.4953 6.39148 37.7099 5.87366 38.0995 5.48401C38.4888 5.09436 39.007 4.87976 39.5578 4.87976C40.1086 4.87976 40.6268 5.09436 41.0164 5.48401C41.8202 6.28821 41.8202 7.59668 41.0164 8.40088C40.6268 8.79016 40.1086 9.00476 39.5578 9.00476C39.0066 9.00476 38.4888 8.79016 38.0995 8.40088Z"
+                                    fill="white" />
+                                <path
+                                    d="M20.1313 40.125C20.1313 40.6428 20.5514 41.0625 21.0688 41.0625H26.9308C27.4486 41.0625 27.8683 40.6428 27.8683 40.125V38.3075C29.101 37.9757 30.2794 37.4872 31.3868 36.8492L32.67 38.1324C32.8458 38.3082 33.0842 38.4071 33.3333 38.4071C33.5815 38.4071 33.8203 38.3082 33.9961 38.1321L38.1394 33.9858C38.5052 33.6196 38.5052 33.026 38.1394 32.6602L36.8577 31.3784C37.4956 30.271 37.9841 29.0925 38.3159 27.8599H40.1265C40.6443 27.8599 41.064 27.4402 41.064 26.9224V21.0604C41.064 20.5426 40.6443 20.1229 40.1265 20.1229H38.3156C37.9838 18.8906 37.4956 17.7122 36.8577 16.6047L38.1324 15.33C38.3082 15.1542 38.4071 14.9154 38.4071 14.6667C38.4067 14.4181 38.3079 14.1793 38.1321 14.0035L33.9855 9.86023C33.6196 9.49438 33.026 9.49438 32.6598 9.8606L31.3868 11.1339C30.2794 10.496 29.101 10.0074 27.8683 9.67566V7.875C27.8683 7.35718 27.4486 6.9375 26.9308 6.9375H21.0688C20.5514 6.9375 20.1313 7.35718 20.1313 7.875V9.67603C18.899 10.0074 17.7206 10.496 16.6132 11.1339L15.3398 9.8606C14.974 9.49475 14.3804 9.49438 14.0142 9.86023L9.86792 14.0039C9.69177 14.1797 9.5929 14.4181 9.5929 14.6667C9.5929 14.9154 9.69177 15.1542 9.86755 15.33L11.1423 16.6047C10.5044 17.7122 10.0159 18.8903 9.68408 20.1229H7.87683C7.35901 20.1229 6.93933 20.5426 6.93933 21.0601L6.93604 26.922C6.93567 27.1707 7.03455 27.4094 7.21033 27.5852C7.38611 27.761 7.62451 27.8599 7.87354 27.8599H9.68408C10.0159 29.0925 10.5044 30.271 11.1423 31.3784L9.8606 32.6602C9.49475 33.026 9.49439 33.6196 9.8606 33.9858L14.0039 38.1321C14.1797 38.3079 14.4181 38.4071 14.6667 38.4071H14.6671C14.9158 38.4071 15.1542 38.3082 15.33 38.1324L16.6128 36.8492C17.7206 37.4872 18.899 37.9757 20.1313 38.3075V40.125ZM16.9805 34.8776C16.6095 34.6377 16.1213 34.6897 15.8086 35.0021L14.6671 36.1436L11.8491 33.3234L12.9895 32.1826C13.3019 31.8702 13.3539 31.3821 13.114 31.0111C12.264 29.6957 11.6664 28.2539 11.3383 26.7253C11.2452 26.2936 10.8636 25.9849 10.4216 25.9849H8.8114L8.8136 21.9979H10.4216C10.8636 21.9979 11.2452 21.6896 11.3383 21.2574C11.6664 19.7292 12.264 18.2875 13.114 16.972C13.3539 16.6011 13.3019 16.1129 12.9895 15.8005L11.8564 14.6671L14.6766 11.8491L15.8086 12.9814C16.1213 13.2938 16.6091 13.3455 16.9805 13.106C18.2955 12.256 19.7373 11.6583 21.2659 11.3302C21.6976 11.2372 22.0063 10.8552 22.0063 10.4136V8.8125H25.9933V10.4132C25.9933 10.8552 26.3016 11.2372 26.7338 11.3298C28.262 11.6583 29.7041 12.2556 31.0192 13.1056C31.3901 13.3455 31.8783 13.2938 32.1907 12.9811L33.323 11.8491L36.1432 14.6671L35.0101 15.8002C34.6974 16.1129 34.6458 16.6011 34.8856 16.972C35.7356 18.2875 36.3329 19.7292 36.6614 21.2574C36.754 21.6896 37.136 21.9979 37.578 21.9979H39.189V25.9849H37.578C37.136 25.9849 36.7544 26.2936 36.6614 26.7253C36.3333 28.2535 35.7356 29.6957 34.8856 31.0107C34.6458 31.3821 34.6978 31.8702 35.0101 32.1826L36.1505 33.323L33.3325 36.1432L32.191 35.0021C31.8783 34.6893 31.3901 34.6377 31.0192 34.8776C29.7037 35.7275 28.262 36.3248 26.7338 36.6533C26.3016 36.7463 25.9933 37.1279 25.9933 37.5699V39.1875H22.0063V37.5699C22.0063 37.1283 21.6976 36.7463 21.2659 36.6533C19.7377 36.3252 18.2959 35.7275 16.9805 34.8776Z"
+                                    fill="white" />
+                                <path
+                                    d="M31.7463 24C31.7463 19.7285 28.2714 16.2535 23.9999 16.2535C19.7284 16.2535 16.2534 19.7285 16.2534 24C16.2534 28.2715 19.7284 31.7465 23.9999 31.7465C28.2714 31.7465 31.7463 28.2715 31.7463 24ZM18.1284 24C18.1284 20.7623 20.7622 18.1285 23.9999 18.1285C27.2375 18.1285 29.8713 20.7627 29.8713 24C29.8713 27.2373 27.2375 29.8715 23.9999 29.8715C20.7622 29.8715 18.1284 27.2377 18.1284 24Z"
+                                    fill="white" />
+                                <path
+                                    d="M32.6323 3.54565C32.8792 3.54565 33.1208 3.44531 33.2952 3.271C33.4695 3.09558 33.5698 2.85388 33.5698 2.60706C33.5698 2.36169 33.4698 2.11963 33.2952 1.94421C33.1208 1.7699 32.8792 1.66956 32.6323 1.66956C32.3848 1.66956 32.1442 1.7699 31.9698 1.94421C31.7952 2.11963 31.6948 2.3606 31.6948 2.60706C31.6948 2.85461 31.7952 3.09558 31.9698 3.271C32.1442 3.44531 32.3848 3.54565 32.6323 3.54565Z"
+                                    fill="white" />
+                                <path
+                                    d="M15.4087 44.4712C15.1622 44.4712 14.9202 44.5715 14.7458 44.7458C14.5715 44.9202 14.4712 45.1622 14.4712 45.4087C14.4712 45.6562 14.5715 45.8972 14.7458 46.0715C14.9202 46.2458 15.1622 46.3462 15.4087 46.3462C15.6552 46.3462 15.8972 46.2458 16.0715 46.0715C16.2458 45.8972 16.3462 45.6552 16.3462 45.4087C16.3462 45.1622 16.2458 44.9202 16.0715 44.7458C15.8972 44.5715 15.6552 44.4712 15.4087 44.4712Z"
+                                    fill="white" />
+                            </svg></div>
+                        <h6 class="pb-[12px] text-sm font-medium leading-normal pr-[6px]">Commercial Service</h6>
+                        <div class="text-[12px] pb-[15px] w-[228px] pr-[6px] font-normal leading-[133.5%]">Professional
+                            plumbing services for homes and businesses you can rely on. Trusted by the local community
+                            for years</div>
+                        <a href="#"
+                            class="rounded-[5px] inline-block self-start mx-auto py-[4px] px-[17px] bg-[#F6FAFB] text-black text-center text-[16px] font-normal leading-normal underline decoration-solid">Learn
+                            More</a>
                     </div>
-                    <div class="w-1/3 px-4">
-                        <div class="py-8">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-share-2 text-[#27A6FE]"
-                                color="[object Object]">
-                                <circle cx="18" cy="5" r="3"></circle>
-                                <circle cx="6" cy="12" r="3"></circle>
-                                <circle cx="18" cy="19" r="3"></circle>
-                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+
+
+                    <div class="w-px h-[223px] mt-[-14px] mr-[3px] ml-[-2px] bg-[#E6E6EB]"></div>
+
+
+
+
+                    <div class="flex flex-col px-[53px] max-w-[338px] text-center text-white">
+                        <div class="pb-[13px] mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="52" viewBox="0 0 51 52"
+                                fill="none">
+                                <path
+                                    d="M49.7704 4.12841H44.7125C44.1537 4.12841 43.7009 4.5813 43.7009 5.14V5.6458H40.6661C40.2857 5.6458 39.9547 5.85601 39.7819 6.16636C30.6144 6.52568 23.2667 14.0946 23.2667 23.3487V24.3603H22.7609C22.2022 24.3603 21.7493 24.8132 21.7493 25.3719V29.4183C21.7493 29.977 22.2022 30.4299 22.7609 30.4299H23.2667V34.1727C23.2667 35.1176 22.8984 36.0058 22.2298 36.6764C21.5601 37.3441 20.6709 37.7133 19.7261 37.7133C18.7813 37.7133 17.8921 37.3441 17.2224 36.6764C16.5537 36.0058 16.1855 35.1176 16.1855 34.1727V30.4299H16.6913C17.25 30.4299 17.7029 29.977 17.7029 29.4183V25.3719C17.7029 24.8132 17.25 24.3603 16.6913 24.3603H16.1855V11.0731C16.4876 10.8981 16.6913 10.5722 16.6913 10.198V7.16319H17.1971C17.7558 7.16319 18.2087 6.7103 18.2087 6.1516V1.09363C18.2087 0.534922 17.7558 0.0820312 17.1971 0.0820312H1.01159C0.452891 0.0820312 0 0.534922 0 1.09363V6.1516C0 6.7103 0.452891 7.16319 1.01159 7.16319H1.51739V10.198C1.51739 10.5722 1.72113 10.8982 2.02319 11.0731V24.3603H1.51739C0.958688 24.3603 0.505797 24.8132 0.505797 25.3719V29.4183C0.505797 29.977 0.958688 30.4299 1.51739 30.4299H2.02319V34.1727C2.02319 36.5631 2.49156 38.8807 3.41413 41.0637C3.85822 42.1128 4.40751 43.1243 5.04684 44.0702C5.6801 45.0079 6.40744 45.889 7.20862 46.6902C8.0098 47.4914 8.8909 48.2187 9.82865 48.852C10.7745 49.4913 11.7861 50.0406 12.8351 50.4847C15.0181 51.4073 17.3352 51.8756 19.7256 51.8756L19.7261 51.8706V51.8746V51.8756C21.0412 51.8756 22.2869 51.7381 23.5292 51.466C24.737 51.2009 25.9209 50.8074 27.0478 50.2945C28.1535 49.7918 29.2127 49.1706 30.195 48.4504C31.1691 47.7342 32.0736 46.9168 32.8819 46.0185C33.2551 45.6038 33.2218 44.9634 32.8071 44.5901C32.621 44.4222 32.3812 44.3302 32.1303 44.3302C31.8441 44.3302 31.57 44.4516 31.3787 44.664C28.4066 47.9608 24.1599 49.8525 19.7261 49.8525C15.5391 49.8525 11.602 48.2208 8.63901 45.2598C5.67808 42.2969 4.04638 38.3597 4.04638 34.1727V30.4299H14.1623V34.1727C14.1623 34.9244 14.31 35.6527 14.5993 36.3386C14.8795 37.0012 15.2811 37.596 15.792 38.1068C16.3028 38.6177 16.8977 39.0183 17.5603 39.2995C18.2461 39.5888 18.9745 39.7365 19.7261 39.7365C20.4777 39.7365 21.206 39.5888 21.8919 39.2995C22.5545 39.0183 23.1493 38.6177 23.6602 38.1068C24.171 37.596 24.5726 37.0012 24.8528 36.3386C25.1422 35.6527 25.2898 34.9244 25.2898 34.1727V30.4299H35.4058V34.1727C35.4058 35.157 35.3137 36.1423 35.1327 37.1023C35.0821 37.3684 35.1387 37.6375 35.2915 37.86C35.4432 38.0836 35.6739 38.2343 35.9389 38.2839C36.0016 38.296 36.0653 38.3021 36.1281 38.3021C36.6126 38.3021 37.0304 37.9551 37.1204 37.4776C37.3248 36.3952 37.429 35.2835 37.429 34.1727V30.4299H37.9348C38.4935 30.4299 38.9464 29.977 38.9464 29.4183V25.3719C38.9464 24.8132 38.4935 24.3603 37.9348 24.3603H37.429V23.551C37.429 22.0446 38.4631 20.7754 39.8587 20.4159C40.0433 20.6608 40.3358 20.8197 40.6661 20.8197H43.7009V21.3255C43.7009 21.8842 44.1537 22.3371 44.7125 22.3371H49.7704C50.3291 22.3371 50.782 21.8842 50.782 21.3255V5.14C50.782 4.5813 50.3291 4.12841 49.7704 4.12841ZM15.6797 28.4067H2.52898V26.3835H15.6797V28.4067ZM14.1623 11.2096V24.3603H4.04638V11.2096H14.1623ZM7.58695 9.18638V7.16319H10.6217V9.18638H7.58695ZM12.6449 9.18638V7.16319H14.6681V9.18638H12.6449ZM5.56377 9.18638H3.54058V7.16319H5.56377V9.18638ZM2.02319 5.14V2.10522H16.1855V5.14H2.02319ZM36.9232 28.4067H23.7725V26.3835H36.9232V28.4067ZM39.6545 18.3883C37.2363 18.8613 35.4058 20.9964 35.4058 23.551V24.3603H25.2898V23.3487C25.2898 15.2535 31.6626 8.61847 39.6545 8.19613V18.3883ZM43.7009 18.7965H41.6777V16.7733H43.7009V18.7965ZM43.7009 14.7501H41.6777V11.7154H43.7009V14.7501ZM43.7009 9.69217H41.6777V7.66899H43.7009V9.69217ZM48.7588 20.3139H45.724V6.1516H48.7588V20.3139Z"
+                                    fill="white" />
+                                <path
+                                    d="M10.1628 40.7209C9.97461 40.4417 9.66101 40.2758 9.32415 40.2758C9.12183 40.2758 8.92659 40.3354 8.75867 40.4487C8.53511 40.6005 8.38337 40.8301 8.33178 41.0951C8.28019 41.3602 8.33582 41.6293 8.48655 41.8538C10.3145 44.5588 13.0488 46.5153 16.1868 47.362C16.2738 47.3852 16.3628 47.3974 16.4508 47.3974C16.9071 47.3974 17.3087 47.0899 17.427 46.6488C17.5727 46.1106 17.253 45.5543 16.7138 45.4086C14.0453 44.6893 11.7186 43.0243 10.1628 40.7209Z"
+                                    fill="white" />
+                                <path
+                                    d="M29.1118 16.8553C28.8376 17.3421 29.01 17.9589 29.4969 18.2331C29.6538 18.3215 29.8243 18.3634 29.9923 18.3634C30.3457 18.3634 30.6889 18.1779 30.8747 17.848C30.9775 17.6655 31.0869 17.4834 31.2 17.3065C32.2542 15.6586 33.7254 14.3079 35.4545 13.4C35.9491 13.1403 36.1396 12.5287 35.88 12.0341C35.6202 11.5394 35.0085 11.3491 34.5141 11.6086C32.4743 12.6796 30.739 14.2729 29.4958 16.2162C29.3623 16.4249 29.2331 16.6399 29.1118 16.8553Z"
+                                    fill="white" />
+                                <path
+                                    d="M34.682 42.6024C35.2407 42.6024 35.6936 42.1495 35.6936 41.5908C35.6936 41.0321 35.2407 40.5792 34.682 40.5792C34.1233 40.5792 33.6704 41.0321 33.6704 41.5908C33.6704 42.1495 34.1233 42.6024 34.682 42.6024Z"
+                                    fill="white" />
                             </svg>
-                            <h5 class="h6 py-4">Integrations</h5>
-                            <p class="text-[18px]">Collect and send data to popular platforms like Zapier, MailChimp,
-                                Airtable, etc using forms.</p>
                         </div>
+                        <h6 class="pb-[11px] text-sm font-medium leading-normal">Maintencnce</h6>
+                        <div class="text-[12px] w-[228px] font-normal pb-[13px] leading-[133.5%]"> We provide reliable
+                            and scalable plumbing solutions for offices, restaurants, retail stores, and more.</div>
+                        <a href="#"
+                            class="rounded-[5px] inline-block mr-[53px] self-start mx-auto bg-[#F6FAFB] text-black text-center text-[16px] font-normal py-[4px] px-[17px] leading-normal underline decoration-solid">Learn
+                            More</a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
 
 
-    <section id="affordable">
-        <div class="bg-[#FFF9F3] pt-[120px] pb-[100px]">
-            <div class="container">
-                <div class="mx-[-16px] flex flex-wrap">
-                    <div class="w-full px-4">
-                        <div class="text-center">
-                            <h2 class="h2 mb-6">Affordable Pricing</h2>
-                            <p class="text-[18px] leading-[27px]">Start building your websites for free. Upgrade to any
-                                paid plans to unlock features like forms, <br> custom domains, and more.</p>
-                            <div class="inline-block py-8">
-                                <a class="btns" href="#">
-                                    See Pricing
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right"
-                                        class="svg-inline--fa fa-arrow-right fa-fw icon w-[12px] h-[12px]" role="img"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                        data-testid="icon-test">
-                                        <path fill="currentColor"
-                                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="extended">
-        <div class="bg-white pt-[120px] pb-[100px]">
-            <div class="container">
-                <div class="mx-[-16px] flex flex-wrap">
-                    <div class="w-full px-4">
-                        <div class="text-center mb-20">
-                            <h2 class="h2">Extended Guides, Live Support & <br> Community to help you</h2>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4">
-                        <div
-                            class="pt-[50px] pb-[30px] px-[30px] rounded-[10px] border-b-3 border-b-[#8C3BFC] bg-[#F6F6FC]">
-                            <h5 class="h5 pb-4">Documentation</h5>
-                            <p class="text-[18px] leading-[27px]">We have extensive documentation on getting started
-                                with Dorik, as well as how to design and customize your website.</p>
-                            <a class="flex gap-[7px] items-center font-medium text-base text-[#17134A] pt-5" href="#">
-                                Dorik Helpx-4esk
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right"
-                                    class="svg-inline--fa fa-arrow-right fa-fw icon w-[12px] h-[12px]" role="img"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test">
-                                    <path fill="currentColor"
-                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4">
-                        <div
-                            class="pt-[50px] pb-[30px] px-[30px] rounded-[10px] border-b-3 border-b-[#DE238E] bg-[#F6F6FC]">
-                            <h5 class="h5 pb-4">Live Chat Support</h5>
-                            <p class="text-[18px] leading-[27px]">We are always available on our support channels to
-                                help you. Live chat with us or send an email, we will get back to you asap.</p>
-                            <a class="flex gap-[7px] items-center font-medium text-base text-[#17134A] pt-5" href="#">
-                                Start Live Chat ➜
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-1/3 px-4">
-                        <div
-                            class="pt-[50px] pb-[30px] px-[30px] rounded-[10px] border-b-3 border-b-[#FFCC85] bg-[#F6F6FC]">
-                            <h5 class="h5 pb-4">Online Forum</h5>
-                            <p class="text-[18px] leading-[27px]">We have a dedicated forum to communicate with our
-                                users. In addition to us, the community helps each other to grow.</p>
-                            <a class="flex gap-[7px] items-center font-medium text-base text-[#17134A] pt-5" href="#">
-                                Facebook Community
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right"
-                                    class="svg-inline--fa fa-arrow-right fa-fw icon w-[12px] h-[12px]" role="img"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-testid="icon-test">
-                                    <path fill="currentColor"
-                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <footer class="pt-[120px] pb-[30px] bg-[#030521] footer-bg">
+    <section id="plumber_company" class="relative">
         <div class="container">
-            <div class="mx-[-16px] flex flex-wrap">
-                <div class="w-full px-4">
-                    <div class="text-center mb-[91px]">
-                        <h2 class="leading-[1] text-[60px] tracking-[-1px] text-white font-bold mb-8">Start Building
-                            Your Website!</h2>
-                        <div class="footer-btns py-[5px] mb-10 flex justify-center">
-                            <a class="btn" href="#">
-                                Try Dorik Now
-                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right"
-                                    class="svg-inline--fa fa-angle-right fa-fw icon " role="img"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-testid="icon-test">
-                                    <path fill="currentColor"
-                                        d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
-                                    </path>
-                                </svg>
-                            </a>
+            <div class="mt-[79px] mb-[77px]">
+                <div class="bg bg-center bg-cover" style="background-image: url('../assets/img/company-banner.png');">
+                    <div class="pt-[51px] pb-[61px] ">
+                        <div class="pt-[23px] pl-[50px] min-h-[293px] bg-white/70 w-[542px]">
+                            <h2 class="text-[44px] font-bold leading-[53px] text-[#000]">Welcome to
+                                <br> Plumber Company
+                            </h2>
+                            <div
+                                class="pt-[11px] text-sm font-normal leading-[16.5px] text-black pb-[28px] max-w-[432px]">
+                                We provide expert plumbing services including pipe repair, leak detection, and drain
+                                cleaning.
+                                Our team of licensed professionals ensures fast, clean, and reliable work every time.
+                                Trusted by homeowners for quality service and long-term solutions.
+                            </div>
+                            <a href="#"
+                                class="inline-block rounded-[45px] bg-[#DD3142] font-normal text-[16px] leading-normal uppercase text-white underline decoration-solid py-[9.5px] px-[19.5px] mb-[17px]">Learn
+                                More</a>
                         </div>
+                    </div>
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74" fill="none">
+                            <path
+                                d="M73.5678 37.1672C73.6395 36.9491 73.6765 36.7208 73.6744 36.4912C73.5843 26.9132 69.7664 17.7413 63.0226 10.9265C56.1975 4.02946 46.9268 0.103746 37.2242 0.00202688C27.5216 -0.0996927 18.1706 3.6308 11.2024 10.3832C4.23422 17.1357 0.211534 26.3647 0.00810646 36.0657C-0.195322 45.7667 3.43694 55.1562 10.1159 62.1948C16.795 69.2335 25.9813 73.3527 35.6796 73.6578C45.378 73.9629 54.8051 70.4293 61.9133 63.8244C68.4948 57.709 72.5962 49.4181 73.4908 40.5278C73.6098 39.3458 72.6815 38.3419 71.4946 38.2921C70.3077 38.2423 69.3125 39.1657 69.1845 40.3467C68.3433 48.1042 64.7363 55.3291 58.9851 60.673C52.707 66.5066 44.3807 69.6275 35.8149 69.3581C27.2491 69.0886 19.1355 65.4504 13.2365 59.2337C7.33743 53.0171 4.12934 44.724 4.30901 36.1559C4.48868 27.5877 8.04161 19.4364 14.1961 13.4726C20.3506 7.50866 28.6095 4.2138 37.1791 4.30364C45.7487 4.39348 53.9367 7.86076 59.9648 13.9524C65.9471 19.9977 69.3226 28.143 69.3736 36.6425C69.3744 36.7724 69.3861 36.9023 69.4097 37.0301C69.8109 39.1955 72.8346 39.3988 73.522 37.3066L73.5678 37.1672Z"
+                                fill="#DD3142" />
+                            <path d="M53.8924 37.1997L28.1969 51.4799L28.6776 22.0869L53.8924 37.1997Z"
+                                fill="#DD3142" />
+                        </svg></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="company_history" class=" pb-[82px]">
+        <div class="bg-[#DD3142]">
+            <div class="container">
+                <div class="min-h-[389px] py-[36px] flex justify-between gap-[98px] items-center  text-white">
+                    <div class="w-[630px]">
+                        <img src="../assets/img/company-history.png" alt="">
+                    </div>
+                    <div class="w-[440px]">
+                        <h2 class="text-[44px] font-bold leading-[53px]">Our Company History</h2>
+                        <div class="pt-[20px] text-sm font-normal leading-[16px] pb-[42px] max-w-[432px]"> Founded over
+                            a decade ago, our plumbing company has built a reputation for honesty and dependable
+                            service.
+                            What started with a single van has now grown into a full-service team trusted by hundreds of
+                            homeowners. </div>
+                        <h3 class="font-[300] text-[30px] leading-[32px]">Trust Our Team of Experts</h3>
+                        <div class="ml-[3px] text-sm font-normal leading-[16px] pt-[15px] max-w-[432px]"> Our plumbers
+                            are licensed, insured, and extensively trained to handle everything from leaks to full
+                            system installs.
+                            We use industry-grade tools and up-to-date techniques to ensure top results.
+                            From start to finish, we focus on clean work</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="plumber_points" class="">
+        <div class="container">
+            <div class="text">
+                <h2 class="text-[30px] text-black font-medium uppercase  text-center">Plumber Points</h2>
+                <div
+                    class="text-[#6D6D6D] pt-[11px] max-w-[983px] pb-[59px] text-center text-[16px] font-normal mx-auto leading-[21.36px]">
+                    Our plumbing services are designed to deliver quality, speed, and lasting results.
+                    From leak detection to complete installations, we use modern tools and techniques.
+                    Trusted by homeowners, we ensure comfort and safety with every repair and upgrade we provide.</div>
+            </div>
+            <div class="flex justify-between items-center gap-[158px]">
+                <div class="flex flex-col gap-[24px] ml-[5px] ">
+                    <div class="flex gap-[10px] ">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                fill="none">
+                                <circle cx="7.5" cy="7.5" r="6" fill="white" stroke="#DD3142" stroke-width="3" />
+                            </svg></span>
+                        <h5 class="text-sm text-black font-medium leading-normal ">Residental Service</h5>
+                    </div>
+                    <div class="flex gap-[10px]">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                fill="none">
+                                <circle cx="7.5" cy="7.5" r="6" fill="white" stroke="#DD3142" stroke-width="3" />
+                            </svg></span>
+                        <h5 class="text-sm text-black font-medium leading-normal ">Commercial Service</h5>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-[24px] ml-[-53px]">
+                    <div class="flex gap-[10px]">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                fill="none">
+                                <circle cx="7.5" cy="7.5" r="6" fill="white" stroke="#DD3142" stroke-width="3" />
+                            </svg></span>
+                        <h5 class="text-sm text-black font-medium leading-normal ">Residental Service</h5>
+                    </div>
+                    <div class="flex gap-[10px]">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                fill="none">
+                                <circle cx="7.5" cy="7.5" r="6" fill="white" stroke="#DD3142" stroke-width="3" />
+                            </svg></span>
+                        <h5 class="text-sm text-black font-medium leading-normal ">Commercial Service</h5>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-[24px] ml-[-3px]">
+                    <div class="flex gap-[10px]">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                fill="none">
+                                <circle cx="7.5" cy="7.5" r="6" fill="white" stroke="#DD3142" stroke-width="3" />
+                            </svg></span>
+                        <h5 class="text-sm text-black font-medium leading-normal ">Maintenance</h5>
+                    </div>
+                    <div class="flex gap-[10px]">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                fill="none">
+                                <circle cx="7.5" cy="7.5" r="6" fill="white" stroke="#DD3142" stroke-width="3" />
+                            </svg></span>
+                        <h5 class="text-sm text-black font-medium leading-normal ">Residental Service</h5>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-[24px] mr-[3px]">
+                    <div class="flex gap-[10px]">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                fill="none">
+                                <circle cx="7.5" cy="7.5" r="6" fill="white" stroke="#DD3142" stroke-width="3" />
+                            </svg></span>
+                        <h5 class="text-sm text-black font-medium leading-normal ">Maintenance</h5>
+                    </div>
+                    <div class="flex gap-[10px]">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
+                                fill="none">
+                                <circle cx="7.5" cy="7.5" r="6" fill="white" stroke="#DD3142" stroke-width="3" />
+                            </svg></span>
+                        <h5 class="text-sm text-black font-medium leading-normal ">Residental Service</h5>
                     </div>
                 </div>
             </div>
-            <div class="mx-[-16px] flex flex-wrap border-t-1 border-t-[#45426E] border-b-1  border-b-[#45426E]">
-                <div class="w-2/5 px-4">
-                    <div class="py-8">
-                        <div class="pb-2">
-                            <img class="w-[150px] object-cover"
-                                src="https://cdn.dorik.com/5e373b6c43a72a001f56dbf6/5f12d290f2d1520011710984/images/logo-white_d3tjcuuv.svg"
-                                alt="">
-                            <p class="text-[#A2A1B7] py-4">❤️ This website is built with Dorik, without writing any code
-                            </p>
-                        </div>
-                        <div class="pb-2">
-                            <a href="#">
-                                <img class="object-cover"
-                                    src="https://cdn.dorik.com/5e373b6c43a72a001f56dbf6/61a1f4035bfd7b0011fb92f9/images/top-post-badge_ikq2y206.svg"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="py-5">
-                            <a class="footer-bt py-10" href="#">
-                                <button>All systems operational</button>
-                            </a>
-                        </div>
+        </div>
+    </section>
+
+
+    <section class="image-section">
+        <div class="pt-[62px] pb-[58px]">
+            <img src="../assets/img/banner-img-3.png" alt="" class="w-screen object-cover h-[255px]">
+        </div>
+    </section>
+
+
+
+
+    <section id="dedicated">
+        <div class="container">
+            <div class="pb-[67px]">
+                <div class="text">
+                    <h2 class="text-[30px] text-black font-medium uppercase  text-center">Our Dedicated Team</h2>
+                    <div
+                        class="text-[#6D6D6D] pt-[4px] mb-[57px] max-w-[831px] pb-[8px] text-center text-[14px] font-normal mx-auto leading-[18px]">
+                        Our skilled plumbing team brings years of hands-on experience to every job.
+                        We’re committed to top-quality service, whether it's fixing a leak or installing a new system.
+                        Count on our experts for reliable, professional, and friendly support every step of the way.
                     </div>
                 </div>
-                <div class="w-1/5 px-4">
-                    <div class="py-8 footer-menu">
-                        <h4 class="text-white leading-[22.4px] font-semibold uppercase">GENERAL</h4>
-                        <ul class="mb-4 mt-2">
-                            <li><a href="#">About Dorik</a></li>
-                            <li><a href="#">Public Roadmap </a></li>
-                            <li><a href="#">Changelog</a></li>
-                            <li><a href="#">Affiliate Program</a></li>
-                        </ul>
-                        <h4 class="text-white leading-[22.4px] font-semibold uppercase">Resources</h4>
-                        <ul class="mb-4 mt-2">
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Tutorial Videos</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Dorik Blog</a></li>
-                            <li><a href="#">Free Illustrations</a></li>
-                            <li><a href="#">Partners</a></li>
-                            <li><a href="#">AI Tools Directory</a></li>
-                            <li><a href="#">Write for Dorik</a></li>
-                        </ul>
+                <div class="flex gap-[41px]">
+                    <div class="flex flex-col">
+                        <img src="../assets/img/dedicated.png" alt="">
+                        <a href="#"
+                            class="py-[8px] inline-block mt-[-38px] self-center text-[18px] font-normal leading-normal text-white  px-[54px] rounded-[5px] bg-[#DD3142]">
+                            <div class="flex flex-col text-center gap-[8px]">
+                                <span>Vinay Kumar</span>
+                                <span>Plumber</span>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <div class="w-1/5 px-4">
-                    <div class="py-8 footer-menu">
-                        <h4 class="text-white leading-[22.4px] font-semibold uppercase">Follow Us</h4>
-                        <ul class="mb-4 mt-2">
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">LinkedIn</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a class="flex items-center gap-2" href="#">Discord <svg aria-hidden="true"
-                                        focusable="false" data-prefix="fab" data-icon="discord"
-                                        class="svg-inline--fa fa-discord fa-fw icon icon_349i9ykz w-[20px] h-[20px] text-[#FFCC85]"
-                                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
-                                        data-testid="icon-test">
-                                        <path fill="currentColor"
-                                            d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
-                                        </path>
-                                    </svg></a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">TikTok</a></li>
-                        </ul>
+                    <div class="flex flex-col">
+                        <img src="../assets/img/dedicated.png" alt="">
+                        <a href="#"
+                            class="py-[8px] inline-block mt-[-38px] self-center text-[18px] font-normal leading-normal text-white  px-[54px] rounded-[5px] bg-[#DD3142]">
+                            <div class="flex flex-col text-center gap-[8px]">
+                                <span>Vinay Kumar</span>
+                                <span>Plumber</span>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <div class="w-1/5 px-4">
-                    <div class="py-8 footer-menu">
-                        <h4 class="text-white leading-[22.4px] font-semibold uppercase">Partner Program</h4>
-                        <p class="mb-4 mt-2 text-[#A2A1B7]">Earn up to 40% recurring commission</p>
-                        <a href="#" class="group">
-                            <span class="flex items-center text-[#FFCC85] gap-1 group-hover:text-white">
-                                Become a Partner
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="feather feather-arrow-right text-[#FFCC85] group-hover:text-white">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </span>
+                    <div class="flex flex-col">
+                        <img src="../assets/img/dedicated.png" alt="">
+                        <a href="#"
+                            class="py-[8px] inline-block mt-[-38px] self-center text-[18px] font-normal leading-normal text-white  px-[54px] rounded-[5px] bg-[#DD3142]">
+                            <div class="flex flex-col text-center gap-[8px]">
+                                <span>Vinay Kumar</span>
+                                <span>Plumber</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex flex-col">
+                        <img src="../assets/img/dedicated.png" alt="">
+                        <a href="#"
+                            class="py-[8px] inline-block mt-[-38px] self-center text-[18px] font-normal leading-normal text-white  px-[54px] rounded-[5px] bg-[#DD3142]">
+                            <div class="flex flex-col text-center gap-[8px]">
+                                <span>Vinay Kumar</span>
+                                <span>Plumber</span>
+                            </div>
                         </a>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="cta pt-10">
-                <div class="mx-[-16px] flex flex-wrap">
-                    <div class="w-6/12 px-4">
-                        <p class="text-sm leading-[21px] text-[#A2A1B7]">© 2024 Dorik, Inc. All rights reserved</p>
+
+
+    <section id="testimonials" style="background-image: url('../assets/img/testimonials.png');"
+        class="relative bg-no-repeat bg-cover bg-center overflow-hidden">
+        <div class="absolute inset-0  bg-black/70 z-0"></div>
+        <div class="container">
+            <div class="pt-[40px] pb-[30px] relative z-10">
+                <h2 class="text-[30px] text-[#EEFF06] font-medium uppercase pr-[9px] text-center pb-[39px]">Testimonial
+                </h2>
+                <div class="testimonial-content text-center">
+
+                    <div class="testimonial-slide">
+
+                        <div
+                            class="max-w-[930px] text-white leading-[23px]  text-[20px] font-normal  text-center mx-auto">
+                            We are committed to providing top-notch plumbing solutions for your home and business. Our expert team handles everything from routine pipe repairs to complex leak detection and drain cleaning services. We provide expert plumbing services </div>
+
+                        <h4
+                            class="text-white text-center font-mukta pb-[22px] pt-[28px] text-[20px] font-bold leading-none">
+                            Johny Vino
+                        </h4>
+
                     </div>
-                    <div class="w-6/12 px-4">
-                        <div class="text-end">
-                            <ul class="flex justify-end gap-5 footer-menu">
-                                <li><a class="text-sm" href="#">Terms & Conditions</a></li>
-                                <li><a class="text-sm" href="#">Privacy Policy</a></li>
+                    <div class="testimonial-slide">
+                        <div
+                            class="max-w-[930px] text-white text-[20px] leading-[23px]  font-normal text-center mx-auto">
+                            We are committed to providing top-notch plumbing solutions for your home and business. Our expert team handles everything from routine pipe repairs to complex leak detection and drain cleaning services. We provide expert plumbing services </div>
+                        <h4
+                            class="text-white text-center font-mukta pt-[28px]  pb-[22px] text-[20px] font-bold leading-none">
+                            Johny Vino
+                        </h4>
+
+                    </div>
+                    <div class="testimonial-slide">
+                        <div
+                            class="max-w-[930px] text-white text-[20px] leading-[23px] font-normal text-center mx-auto">
+                            We are committed to providing top-notch plumbing solutions for your home and business. Our expert team handles everything from routine pipe repairs to complex leak detection and drain cleaning services. We provide expert plumbing services </div>
+                        <h4
+                            class="text-white text-center font-mukta pt-[28px] pb-[22px] text-[20px] font-bold leading-none">
+                            Johny Vino
+                        </h4>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="blogs">
+        <div class="container">
+            <div class="pt-[61px] pb-[52px]">
+                <div class="">
+                    <h2 class="text-[30px] text-black font-medium uppercase  text-left">our recent blogs</h2>
+                    <div class="card flex pt-[39px]  gap-[90px]">
+                        <div class="flex flex-col w-[332px] ml-[3px] mt-[2px] h-[264px]">
+                            <img src="../assets/img/blogs.png" alt="">
+                            <h3 class="pt-[18px] text-black text-[20px] font-normal leading-[23px]">Affordable and Reliable Plumbing Services for Your Home</h3>
+                            <span
+                                class="text-[12px] pb-[13px] mt-[4px] pt-[10px] text-black font-normal leading-[16px]">Don’t
+                                wrestle with rig assembly and hot, noisy miners at home. We have the fastest bitcoin
+                                mining hardware running for you....</span>
+                        </div>
+                        <div class="flex flex-col w-[332px] ml-[3px] h-[264px]">
+                            <img src="../assets/img/blogs2.png" alt="">
+                            <h3 class="pt-[18px] text-black text-[20px] font-normal leading-[23px]">Affordable and Reliable  is
+                                simply dummy text of the printing  </h3>
+                            <span class="text-[12px] pb-[13px] pt-[10px] leading-[16px] text-black font-normal ">Don’t
+                                wrestle with rig assembly and hot, noisy miners at home. We have the fastest bitcoin
+                                mining hardware running for you....</span>
+                        </div>
+                        <div class="flex flex-col w-[332px] ml-[3px] h-[264px]">
+                            <img src="../assets/img/blogs-3.png" class="w-[330px] h-[131px] object-cover" alt="">
+                            <h3 class="pt-[18px] text-black text-[20px] font-normal leading-[23px]">Lorem Ipsum is
+                                simply dummy text of the printing and typesetting. </h3>
+                            <span class="text-[12px] pb-[13px] pt-[10px] text-black font-normal leading-[16px]">Don’t
+                                wrestle with rig assembly and hot, noisy miners at home. We have the fastest bitcoin
+                                mining hardware running for you....</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-black ">
+        <div class="pt-[30px] pb-[25px] ml-[5px]">
+            <div class="container">
+                <div class="flex justify-between">
+                    <div class="w-[410px] flex flex-col ">
+                        <a href="#"><img src="../assets/img/footer-logo.png" alt="logo"></a>
+                        <div class="text-xs leading-[14px] text-white pt-[27px] pb-[5px] font-normal max-w-[362px]">Plumber Point is a locally trusted plumbing service provider with years of experience in residential, commercial, and maintenance plumbing. We pride ourselves on reliability, professionalism, and delivering long-lasting solutions.</div>
+                        <div class="flex gap-[14px] ml-[-4px] mt-[3px]">
+                            <i class="ri-facebook-fill text-[#DD3142]"></i>
+                            <i class="ri-google-fill text-[#DD3142]"></i>
+                            <i class="ri-twitter-fill text-[#DD3142]"></i>
+                        </div>
+                    </div>
+                    <div class="w-[153px] text-white  flex flex-col">
+                        <h3 class="text-[#DD3142] font-bold text-[16px] uppercase ml-[1px]">Our Services</h3>
+                        <ul class="text-xs font-normal flex flex-col gap-[13px] pt-[36px]">
+                            <li><a class="duration-150 hover:text-[#DD3142]" href="#">Plumber Service</a></li>
+                            <li><a class="duration-150 hover:text-[#DD3142]" href="#">Bathroom Plumbing Service</a></li>
+                            <li><a class="duration-150 hover:text-[#DD3142]" href="#">Kitchen Plumbing Service</a></li>
+                            <li><a class="duration-150 hover:text-[#DD3142]" href="#">Roof Plumbing Service</a></li>
+                            <li><a class="duration-150 hover:text-[#DD3142]" href="#">Bathroom Plumbing Service</a></li>
+                            <li><a class="duration-150 hover:text-[#DD3142]" href="#">Kitchen Plumbing Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-[151px] text-white flex flex-col">
+                        <h3 class="text-[#DD3142] ml-[9px] font-bold text-[16px] uppercase">Contact</h3>
+                        <div class="">
+                            <ul class="flex flex-col gap-[39px] text-white leading-4 pt-[38px] ml-[9px]">
+
+                                <li>
+                                    <a href="tel:180099382839"
+                                        class="block text-xs font-semibold hover:text-[#DD3142] transition duration-150">
+                                        1800-9938-2839
+                                    </a>
+                                    <a href="mailto:support@plumberpoint.com"
+                                        class="block text-xs  hover:text-[#DD3142]">
+                                        support@plumberpoint.com
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <address class="not-italic">
+                                        <p class=" font-semibold hover:text-[#DD3142] text-xs  transition duration-150">
+                                            A-507 Mandoli
+                                        </p>
+                                        <p class="text-xs ">
+                                            New Delhi, India
+                                        </p>
+                                    </address>
+                                </li>
+
+                                <li class="mt-[-7px]">
+                                    <p class="text-xs font-semibold hover:text-[#DD3142] transition duration-150">
+                                        Mon–Sat9:00–15:00
+                                    </p>
+                                    <p class="text-xs ">
+                                        Sunday CLOSED
+                                    </p>
+                                </li>
+
                             </ul>
                         </div>
+                    </div>
+                    <div class="w-[260px] text-white flex flex-col">
+                        <h3 class="text-[#DD3142] font-bold text-[16px] uppercase">Recent Post</h3>
+
+                        <div class="flex flex-col gap-[21px] pt-[15px]">
+                            <a href="#">
+                                <div class="flex items-center gap-[11px]">
+                                    <img class="w-[68px] h-[50px] object-cover" src="../assets/img/recent.png" alt="">
+                                    <div class="flex flex-col gap-[3px]">
+                                        <h5 class="text-[10px] font-medium">Sewer Line Repair</h5>
+                                        <p class="text-[8px] leading-[133.5%]">Lore Issue . Simply dummy text . The
+                                            printing
+                                            and typesetting industry. Lore Issue has been the industry'.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="flex items-center mt-[-4px] gap-[11px]">
+                                    <img class="w-[68px] h-[50px] object-cover" src="../assets/img/recent.png" alt="">
+                                    <div class="flex flex-col gap-[3px]">
+                                        <h5 class="text-[10px] font-medium">Sewer Line Repair</h5>
+                                        <p class="text-[8px] leading-[133.5%]">Lore Issue . Simply dummy text . The
+                                            printing
+                                            and typesetting industry. Lore Issue has been the industry'.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="flex items-center gap-[11px]">
+                                    <img class="w-[68px] h-[50px] object-cover" src="../assets/img/recent.png" alt="">
+                                    <div class="flex flex-col gap-[3px]">
+                                        <h5 class="text-[10px] font-medium">Sewer Line Repair</h5>
+                                        <p class="text-[8px] leading-[133.5%]">Lore Issue . Simply dummy text . The
+                                            printing
+                                            and typesetting industry. Lore Issue has been the industry'.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="pt-[9px] pb-[11px] border-t border-[#FFFFFF]">
+                <div class="container">
+                    <div class="flex justify-between items-center ">
+                        <h6 class="text-[10px] font-normal text-[#DD3142]">©Copyright 2020 Techwero Systems.</h6>
+                        <ul class="flex gap-[38px] text-[10px] font-normal text-[#DD3142]"">
+                    <li><a class=" duration-300 hover:text-white" href="#">Term of Services</a></li>
+                            <li><a class="duration-300 hover:text-white" href="#">Privacy & policy</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+
 
 
 
